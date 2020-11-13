@@ -494,6 +494,7 @@ footer p {
 .modal-content {
   width: 40rem;
   margin: auto;
+  margin-top: 10rem;
   background: #FFFFFF;
   box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
   transition: all 500ms ease;
