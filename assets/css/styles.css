@@ -1,0 +1,543 @@
+@font-face {
+  font-family: Source Sans, sans-serif;
+  src: url("../assets/fonts/SourceSansPro-Black.otf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fon;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  box-shadow: -5px 10px 10px -12px rgba(0, 0, 0, 0.75);
+}
+
+.followus__container {
+  display: flex;
+  background-color: #E64426;
+  color: #FFFFFF;
+  font-family: fon;
+}
+.followus__container p {
+  margin: auto;
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #FFFFFF;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 5px;
+}
+nav .search--container {
+  border: solid 2px #404263;
+  width: 300px;
+  padding: 5px;
+}
+nav .search--container input {
+  border: none;
+  width: 90%;
+  padding: 5px;
+}
+nav .search--container input:focus {
+  outline: none;
+}
+nav .search--container img {
+  width: 20px;
+}
+
+ul li {
+  list-style: none;
+  justify-content: space-between;
+}
+
+.menu--item {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #404263;
+  padding: 10px;
+}
+.menu--item:hover {
+  background-color: #E64426;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+  padding-top: 10rem;
+}
+
+.sidebar .sidebar--item.orange {
+  background-color: #E64426;
+}
+.sidebar .sidebar--item {
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  background: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.carryout--container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.landing--module {
+  margin-top: 5%;
+  display: flex;
+}
+.landing--module .background--shape {
+  width: 50vh;
+  height: 120vh;
+  background-color: #F4F4F4;
+  border-radius: 100px 3000px 2800px 50px;
+  position: absolute;
+  z-index: -1000;
+}
+.landing--module .brand--carryout .brand--carryout--banner {
+  margin: auto;
+  padding-left: 5%;
+}
+.landing--module .brand--carryout .brand--carryout--banner img {
+  width: 30rem;
+}
+.landing--module .brand--carryout .brand--carryout--banner h1 {
+  margin-left: 2%;
+  margin-bottom: -15px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: #404263;
+}
+.landing--module .brand--carryout .brand--carryout--banner h1.altern {
+  color: #E64426;
+}
+.landing--module .brand--carryout .row--services {
+  /*   display: flex;
+   justify-content  */
+}
+.landing--module .brand--carryout .services {
+  display: inline-grid;
+  margin: 2rem;
+  text-align: center;
+  width: 10rem;
+}
+.landing--module .brand--carryout .services img {
+  max-height: 9rem;
+  margin: auto;
+}
+.landing--module .brand--carryout .services .services--button {
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #E64426;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#about-us {
+  padding-top: 10rem;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+.about-us .aboutus-article {
+  width: 50rem;
+}
+.about-us .aboutus-article h3 {
+  margin-left: 100px;
+  color: #404263;
+}
+.about-us .aboutus-article p {
+  width: 70%;
+  font-size: 1.3rem;
+  margin-left: 100px;
+  text-align: justify;
+}
+.about-us .aboutus-image {
+  width: 25rem;
+}
+.about-us .aboutus-image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.aboutus-footer {
+  height: 250px;
+  background: #E64426;
+  padding-bottom: 6rem;
+}
+.aboutus-footer .aboutus-blank {
+  height: 200px;
+  background: #FFFFFF;
+  border-radius: 0 0 50% 50%;
+  z-index: 1;
+}
+
+#makeyoubrand {
+  padding-top: 10rem;
+}
+
+.makeyoubrand .banner {
+  display: flex;
+  padding: 8rem 0 0 0;
+  background: #404263;
+  color: #FFFFFF;
+}
+.makeyoubrand .banner .banner-container {
+  width: 60rem;
+}
+.makeyoubrand .banner .banner-container img {
+  width: 100%;
+  object-fit: cover;
+}
+.makeyoubrand .banner h3 {
+  font-size: 2rem;
+}
+.makeyoubrand .banner p {
+  width: 70%;
+  font-size: 1.3rem;
+}
+.makeyoubrand .image-container {
+  margin: 1.5rem;
+}
+.makeyoubrand .markbrand--container {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+.makeyoubrand .markbrand--container h2 {
+  font-size: 3rem;
+  width: 70%;
+  margin: auto;
+}
+.makeyoubrand .markbrand--container p {
+  font-size: 1.5rem;
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+}
+.makeyoubrand .markbrand--container .btn-inicia {
+  color: #FFFFFF;
+  background: #E64426;
+  padding: 10px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.7rem;
+  position: relative;
+  top: 3rem;
+}
+
+#Sell {
+  padding-top: 8rem;
+}
+
+.sellbrand-container {
+  margin: 1.5rem;
+}
+
+.sell--container {
+  background: #E64426;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+}
+.sell--container img {
+  margin-left: 5rem;
+}
+.sell--container .sellandshow--container {
+  display: flex;
+  color: #FFFFFF;
+  justify-content: space-around;
+}
+.sell--container .sellandshow--container .sell--info {
+  margin-left: 5rem;
+}
+.sell--container .sellandshow--container .sell--info h2 {
+  font-size: 2rem;
+}
+.sell--container .sellandshow--container .sell--info p {
+  font-size: 1.3rem;
+  width: 80%;
+}
+.sell--container .sellandshow--container .sell--info a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.7rem;
+  background: #404263;
+  padding: 10px 30px;
+  border-radius: 30px;
+  position: relative;
+  top: 5rem;
+}
+.sell--container .sellandshow--container .media--container {
+  width: 25rem;
+}
+.sell--container .sellandshow--container .media--container img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.carryout-steps {
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+  background-position-y: bottom;
+  font-size: 1.6rem;
+}
+.carryout-steps ol {
+  padding-bottom: 5rem;
+  margin-left: 5rem;
+}
+.carryout-steps ol li {
+  list-style: none;
+  line-height: 3rem;
+}
+.carryout-steps ol li span {
+  color: #FFFFFF;
+  background: #E64426;
+  padding: 8px 16px;
+  border-radius: 100%;
+}
+.carryout-steps img {
+  width: 20rem;
+  margin-left: 7rem;
+}
+
+.makebrand-footer {
+  height: 250px;
+  background: #404263;
+  padding-bottom: 6rem;
+}
+.makebrand-footer .makebrand-blank {
+  height: 23rem;
+  background: #FFFFFF;
+  border-radius: 0 0 50% 50%;
+  z-index: 1;
+}
+
+#artist {
+  padding-top: 13rem;
+}
+
+.artist {
+  text-align: center;
+}
+.artist .title-artist {
+  width: 35rem;
+  margin: auto;
+}
+.artist .title-artist img {
+  width: 100%;
+  object-fit: cover;
+}
+.artist .markartist-container {
+  margin: 5rem;
+}
+.artist .markartist-container .mark-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact-us {
+  padding-top: 5rem;
+}
+
+.contact-us {
+  background: #404263;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact-us .contact-us--container {
+  margin: 5rem;
+}
+.contact-us .contact-us--container h2 {
+  color: #FFFFFF;
+  background-color: #E64426;
+  text-align: center;
+  padding: 10px;
+  width: 15rem;
+  border-radius: 20px;
+  font-size: 2rem;
+}
+.contact-us .contact-us--container form {
+  display: inline-grid;
+  grid-gap: 20px;
+}
+.contact-us .contact-us--container form input {
+  font-size: 1.7rem;
+  padding: 10px;
+}
+.contact-us .contact-us--container form textarea {
+  resize: none;
+}
+.contact-us .contact-us--container form button {
+  background: #E64426;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.contact-us .contact--container {
+  margin: 5rem;
+}
+.contact-us .contact--container .contact--general {
+  display: flex;
+}
+.contact-us .contact--container .contact--general .contact__container--form {
+  height: 30rem;
+  color: #FFFFFF;
+  padding: 30px;
+  font-size: 1.5rem;
+}
+.contact-us .contact--container .contact--general .contact__container--form h2 {
+  font-size: 4rem;
+}
+.contact-us .contact--container .contact--general .contact__container--form ul {
+  padding: 0;
+}
+.contact-us .contact--container .contact--general .contact__container--form a {
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+.contact-us .contact--container .contact--general .map--container iframe {
+  height: 100%;
+}
+
+footer {
+  height: 120px;
+  background: #E64426;
+  text-align: center;
+  display: flex;
+}
+footer img {
+  height: 6rem;
+  margin: auto;
+}
+footer p {
+  margin: auto;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+}
+
+.pilot {
+  justify-content: space-between;
+}
+
+.parch {
+  background: #FFFFFF;
+  width: 30rem;
+  border-radius: 0 0 2000px 1500px;
+  padding: 3rem;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.parch-score {
+  margin: auto;
+}
+.parch-score h2 {
+  background: #E64426;
+  width: 30rem;
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 30px;
+}
+.parch-score .stars {
+  width: 10rem;
+}
+.parch-score .stars img {
+  width: 100%;
+}
+
+.modal {
+  display: none;
+}
+
+.showModal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+}
+
+.modal-content {
+  width: 40rem;
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+  transition: all 500ms ease;
+}
+.modal-content .header-modal {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #E64426;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+.modal-content h4 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.modal-content .form--container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.modal-content .form--container img {
+  width: 10rem;
+  height: 8rem;
+  margin: auto 0;
+}
+.modal-content .form--container form {
+  font-size: 1.6rem;
+  display: inline-grid;
+  text-align: center;
+}
+.modal-content .form--container form input, .modal-content .form--container form select {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.modal-content .form--container form button {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #404263;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.modal-content .form--container form button:hover {
+  background: #E64426;
+  color: #FFFFFF;
+}

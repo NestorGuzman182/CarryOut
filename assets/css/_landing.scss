@@ -1,0 +1,356 @@
+html{
+    scroll-behavior: smooth;
+}
+#home{
+    padding-top: 10rem;
+}
+.sidebar{
+    .sidebar--item.orange{
+        background-color: $primary-color;
+    }.sidebar--item{
+        height: 50px;
+        width: 100px;
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        background: $light-color;
+        margin-bottom: 5px;
+    }
+}
+.carryout--container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.landing--module {
+    margin-top: 5%;
+    display: flex;
+    .background--shape{
+        width: 50vh;
+        height: 120vh;
+        background-color: $grey-scale;
+        border-radius: 100px 3000px 2800px 50px;
+        position: absolute;
+        z-index: -1000;
+    }
+    .brand--carryout{
+        .brand--carryout--banner{
+            margin: auto;
+            padding-left: 5%;
+            img{
+                width: 30rem;
+            }
+            h1 {
+                margin-left: 2%;
+                margin-bottom: -15px;
+                font-size: 30px;
+                letter-spacing: 5px;
+                color: $secondary-color;
+                &.altern{
+                    color: $primary-color;
+                }
+            }
+        }
+        .row--services{
+          /*   display: flex;
+           justify-content  */
+           
+        }
+        .services{
+            display: inline-grid;
+            margin: 2rem;
+            text-align: center;
+            width: 10rem;
+            img{
+                max-height: 9rem; 
+                margin: auto;
+            }
+            .services--button{
+                text-decoration: none;
+                color: $light-color;
+                background: $primary-color;
+                margin: 10px;
+                padding: 10px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    }
+#about-us{
+    padding-top: 10rem;
+}
+.about-us{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    .aboutus-article{
+        width: 50rem;
+        h3{
+            margin-left: 100px;
+            color: $secondary-color;
+        }
+        p{
+            width: 70%;
+            font-size: 1.3rem;
+            margin-left: 100px;
+            text-align: justify;
+        }
+    }
+    .aboutus-image {
+        width: 25rem;
+        img{
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}
+
+.aboutus-footer{
+    height: 250px;
+    background: $primary-color;
+    padding-bottom: 6rem;
+    .aboutus-blank{
+        height: 200px;
+        background: $light-color;
+        border-radius: 0 0 50% 50%;
+        z-index: 1;
+    }
+}
+#makeyoubrand{
+    padding-top: 10rem;
+}
+.makeyoubrand{
+    .banner{
+        display: flex;
+        padding: 8rem 0 0 0;
+        background: $secondary-color;
+        color: $light-color;
+        .banner-container{
+            width: 60rem;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            width: 70%;
+            font-size: 1.3rem;
+        }
+    }
+    .image-container{
+        margin: 1.5rem;
+    }
+    .markbrand--container{
+        display: flex;
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        h2{
+            font-size: 3rem;
+            width: 70%;
+            margin: auto;
+        }
+        p{
+            font-size: 1.5rem;
+            width: 70%;
+            margin: auto;
+            margin-top: 3rem;
+        }
+        .btn-inicia{
+            color: $light-color;
+            background: $primary-color;
+            padding: 10px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.7rem;
+            position: relative;
+            top: 3rem;
+        }
+    }
+}
+#Sell{
+    padding-top: 8rem;
+}
+.sellbrand-container{
+    margin: 1.5rem;
+}
+.sell--container{
+    background: $primary-color;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    img{
+        margin-left: 5rem;
+    }
+    .sellandshow--container{
+        display: flex;
+        color: $light-color;
+        justify-content: space-around;
+        .sell--info{
+            margin-left: 5rem;
+            h2{
+                font-size:2rem
+            }
+            p{
+                font-size: 1.3rem;
+                width: 80%;
+            }
+            a{
+                text-decoration: none;
+                color: $light-color;
+                font-size: 1.7rem;
+                background: $secondary-color;
+                padding: 10px 30px;
+                border-radius: 30px;
+                position: relative;
+                top: 5rem;
+            }
+        }
+        .media--container{
+            width: 25rem;
+            img{
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+}
+.carryout-steps{
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-position-y: bottom;
+    font-size: 1.6rem;
+    ol{
+        padding-bottom: 5rem;
+        margin-left: 5rem;
+        li{
+            list-style: none;
+            line-height: 3rem;
+            span{
+                color: $light-color;
+                background: $primary-color;
+                padding: 8px 16px;
+                border-radius: 100%;
+                
+            }
+        }
+    }
+    img{
+        width: 20rem;
+        margin-left: 7rem;
+    }
+}
+.makebrand-footer{
+    height: 250px;
+    background: $secondary-color;
+    padding-bottom: 6rem;
+    .makebrand-blank{
+        height: 23rem;
+        background: $light-color;
+        border-radius: 0 0 50% 50%;
+        z-index: 1;
+    }
+}
+#artist{
+    padding-top: 13rem;
+}
+.artist{
+    text-align: center;
+    .title-artist{
+        width: 35rem;
+        margin: auto;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .markartist-container{
+        margin: 5rem;
+        .mark-container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+}
+#contact-us{
+    padding-top: 5rem;
+}
+.contact-us{
+    background: $secondary-color;
+    display: flex;
+    justify-content: space-evenly;
+    .contact-us--container{
+        margin: 5rem;
+        h2{
+            color: $light-color;
+            background-color: $primary-color;
+            text-align: center;
+            padding: 10px;
+            width: 15rem;
+            border-radius: 20px;
+            font-size: 2rem;
+        }
+        form{
+            display: inline-grid;
+            grid-gap: 20px;
+            input{
+                font-size: 1.7rem;
+                padding: 10px;
+            }
+            textarea{
+                resize: none;
+            } 
+            button{
+                background: $primary-color;
+                color: $light-color;
+                font-size: 1.5rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+    .contact--container{
+        margin: 5rem;
+            .contact--general{
+                display: flex;
+                .contact__container--form{
+                    height: 30rem;
+                    color: $light-color;
+                    padding: 30px;
+                    font-size: 1.5rem;
+                    h2{
+                        font-size: 4rem;
+                    }ul{
+                        padding: 0;
+                    }a{
+                        text-decoration: none;
+                        color: $light-color;
+                        border: 2px solid $light-color;
+                    }
+             }.map--container{
+                 iframe{
+                     height: 100%;
+                 }
+             }
+        }
+    }
+}
+
+footer{
+    height: 120px;
+    background: $primary-color;
+    text-align: center;
+    display: flex;
+    img{
+        height: 6rem;
+        margin: auto;
+    }
+    p{
+        margin: auto;
+        color: $light-color;
+        font-size: 1.3rem;
+    }
+}

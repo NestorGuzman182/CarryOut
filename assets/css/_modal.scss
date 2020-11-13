@@ -1,0 +1,66 @@
+
+.modal{
+    display: none;
+}
+.showModal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    background: rgba($color: #000000, $alpha: 0.5);
+    transition: all 500ms ease;
+}
+
+.modal-content{
+    width: 40rem;
+    margin: auto;
+    background: $light-color;
+    box-shadow: 1px 7px 25px rgba($color: #000000, $alpha: 0.6);
+    transition: all 500ms ease;
+    .header-modal{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: $primary-color;
+        color: $light-color;
+        font-size: 2rem;
+    }h4{
+        font-size: 1.7rem;
+        text-align: center;
+    }.form--container{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 30px;
+        
+        img{
+            width: 10rem;
+            height: 8rem;
+            margin: auto 0;
+        }
+        form{
+            font-size: 1.6rem;
+            display: inline-grid;
+            text-align: center;
+            input, select{
+                font-size: 1.3rem;
+                margin-bottom: 5px;
+                padding: 5px;
+            }
+            button{
+                font-size: 20px;
+                font-weight: bolder;
+                color: $secondary-color;
+                cursor: pointer;
+                margin-bottom: 10px;
+                &:hover{
+                    background: $primary-color;
+                    color: $light-color;
+                }
+            }
+        }
+        }
+}

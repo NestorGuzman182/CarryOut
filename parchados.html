@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+    
+        <title>Carry Out</title>
+    </head>
+</head>
+<body>
+    <header>
+        <div class="followus__container">
+            <a class="menu--item" href="index.html#contact-us">Contactanos</a>
+            <p>Con Carry Out, sin complicaciones</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="menu--item" href="index.html#about-us">Sobre nosotros</a></li>
+                <li><a class="menu--item" href="index.html#makeyoubrand">Crea tu marca</a></li>
+                <li><a class="menu--item" href="index.html#Sell">Exhibe y vende tu marca</a></li>
+                <li><a class="menu--item" href="index.html#artist">Marcas-Artistas</a></li>
+                <a class="brand-logo" href="index.html#home"><img src="assets/logos-icons/brandCarryOut.png" alt=""></a>
+                <li><a id="btnRegistro" class="menu--item btn-modal openModal" href="#">Registro</a></li>
+                <li><a id="btnSesion" class="menu--item btn-modal openModal" href="#">Inicio sesion</a></li>
+                <li><a href=""><img src="assets/logos-icons/carrito.png" alt="carrito" width="50"></a></li>
+                <li>
+                    <div class="search--container">
+                        <input type="text" placeholder="Encuentra algo genial"><img src="assets/logos-icons/search-icon.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="idModal" class="modal">
+        <div class="modal-content">
+            <div class="header-modal"> 
+                <div>Registrate</div>  
+                <button for="close-modal" id="closeModal">X</button>
+            </div>
+            <h4>Registra tus datos</h4>
+            <div class="form--container">
+                <img src="assets/logos-icons/brandCarryOut.png" alt="">
+                <form>
+                    <input type="text" placeholder="Nombres y Apellidos">
+                    <input type="email" placeholder="Correo">
+                    <input type="number" placeholder="Celular">
+                    <select name="" id="" place>
+                        <option hidden selected>¿Que deseas hacer?</option>
+                        <option value="">Quiero Comprar</option>
+                        <option value="">Quiero Vender</option>
+                    </select>
+                    <input type="text" placeholder="Empresa">
+                    <input type="password" placeholder="Contraseña">
+                    <input type="text" placeholder="Confirma tu Contraseña">
+                    <button>Registrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="idModal2" class="modal">
+        <div class="modal-content">
+            <div class="header-modal"> 
+                <div>Inicia Sesion</div>  
+                <button for="close-modal" id="closeModal2">X</button>
+            </div>
+           
+            <div class="form--container">
+                <img src="assets/logos-icons/brandCarryOut.png" alt="">
+                <form>
+                    <input type="email" placeholder="Correo">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Iniciar sesion</button>
+                    <a href="" style="font-size: 1rem">No tienes una cuenta</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section class="makeyoubrand" style="padding-top: 1rem;"> 
+        <div class="banner pilot" style="padding-bottom: 5rem;">
+            <div class="logo-container parch">
+                <img src="assets/logos-icons/images/parchados.png" alt="" width="300px" style="margin-left:5rem;">
+            </div>
+            <div class="parch-score">
+                <h2>PARCHADOS COLOMBIA</h2>
+                <div>
+                    <div class="score-container">
+                        <div class="stars">
+                            <img src="assets/logos-icons/images/social-network.png" alt="">
+                        </div>
+                        <div class="stars">
+                            <img src="assets/logos-icons/images/stars.png" alt="">
+                        </div>
+                    </div>
+                    <p>Parchados es una marca colombiana con 3 años de trayectoria, se enfoca en un concepto minimalista   </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="assets/js/modal.js"></script>
+</html>

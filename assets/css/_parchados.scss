@@ -1,0 +1,33 @@
+.pilot{
+    justify-content: space-between;
+}
+
+.parch{
+    background: $light-color;
+    width: 30rem;
+    border-radius: 0 0 2000px 1500px;
+    padding: 3rem;
+}
+
+.score-container{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.parch-score{
+    margin: auto;
+    h2{
+        background: $primary-color;
+        width: 30rem;
+        padding: 10px;
+        text-align: center;
+        font-size: 2rem;
+        border-radius: 30px;
+    }
+    .stars{
+        width: 10rem;
+        img{
+            width: 100%;
+        }
+    }
+}
