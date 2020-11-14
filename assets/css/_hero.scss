@@ -1,0 +1,39 @@
+.heropage-container{
+    display: flex;
+}
+.hero-nav{
+    width: 60%;
+    margin: 3rem;
+}
+
+
+.container-heroimage{
+    padding-top: 5rem;
+    width: 28rem;
+    margin: auto;
+    position: relative;
+    right: 0;
+    img{
+        width: 100%;
+        object-fit: cover;
+        margin: 5rem;
+    }
+}
+.go-container{
+    text-align: center;
+    width: 100%;
+    margin-left: 5rem;
+    margin-top: -5rem;
+    h3{
+        font-size: 1.8rem;
+    }
+    a{
+        font-size: 2rem;
+        font-weight: bolder;
+        text-decoration: none;
+        color: $light-color;
+        background: $primary-color;
+        padding: 5px 50px;
+        border-radius: 30px;
+    }
+}
