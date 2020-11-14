@@ -31,3 +31,23 @@
         }
     }
 }
+.content-products{
+    .icons-shop{
+        height: 4rem;
+        margin: 1rem 3rem;
+    }
+    ul{
+        width: 30rem;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.8rem;
+        font-weight: bolder;
+    }
+    .clothes{
+        text-align: left;
+        width: 70%;
+        img{
+            width: 100%;
+        }
+    }
+}

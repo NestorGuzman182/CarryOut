@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: fon;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 header {
@@ -21,7 +21,7 @@ header {
   display: flex;
   background-color: #E64426;
   color: #FFFFFF;
-  font-family: fon;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .followus__container p {
   margin: auto;
@@ -304,7 +304,7 @@ html {
   font-size: 1.6rem;
 }
 .carryout-steps ol {
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
   margin-left: 5rem;
 }
 .carryout-steps ol li {
@@ -318,7 +318,7 @@ html {
   border-radius: 100%;
 }
 .carryout-steps img {
-  width: 20rem;
+  width: 15rem;
   margin-left: 7rem;
 }
 
@@ -474,6 +474,25 @@ footer p {
   width: 100%;
 }
 
+.content-products .icons-shop {
+  height: 4rem;
+  margin: 1rem 3rem;
+}
+.content-products ul {
+  width: 30rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.content-products .clothes {
+  text-align: left;
+  width: 70%;
+}
+.content-products .clothes img {
+  width: 100%;
+}
+
 .modal {
   display: none;
 }
@@ -489,12 +508,12 @@ footer p {
   left: 0%;
   background: rgba(0, 0, 0, 0.5);
   transition: all 500ms ease;
+  z-index: 100;
 }
 
 .modal-content {
   width: 40rem;
   margin: auto;
-  margin-top: 10rem;
   background: #FFFFFF;
   box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
   transition: all 500ms ease;
@@ -541,4 +560,122 @@ footer p {
 .modal-content .form--container form button:hover {
   background: #E64426;
   color: #FFFFFF;
+}
+
+.closeModal {
+  border-radius: 100px;
+  color: #FFFFFF;
+  background: #404263;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+:root {
+  --main-white-color: white;
+  --main-black-color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.static {
+  position: static;
+}
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.owl-carousel .owl-slide {
+  position: relative;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.owl-carousel .owl-slide-animated {
+  transform: translateX(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.05s;
+}
+
+.owl-carousel .owl-slide-animated.is-transitioned {
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.owl-carousel .owl-slide-title.is-transitioned {
+  transition-delay: 0.2s;
+}
+
+.owl-carousel .owl-slide-subtitle.is-transitioned {
+  transition-delay: 0.35s;
+}
+
+.owl-carousel .owl-slide-cta.is-transitioned {
+  transition-delay: 0.5s;
+}
+
+.owl-carousel .owl-dots,
+.owl-carousel .owl-nav {
+  position: absolute;
+}
+
+.owl-carousel .owl-dots .owl-dot,
+.owl-carousel .owl-nav [class*=owl-]:focus {
+  outline: none;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  background: transparent;
+  border: 1px solid var(--main-black-color);
+  transition: all 0.2s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover span,
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: var(--main-black-color);
+}
+
+.owl-carousel .owl-nav {
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.owl-carousel .owl-nav svg {
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.owl-carousel .owl-nav button:hover svg {
+  opacity: 1;
+}
+
+.owl-carousel .owl-nav [class*=owl-]:hover {
+  background: transparent;
+}
+
+section {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  .owl-carousel .owl-nav {
+    top: 5%;
+  }
+
+  .owl-carousel .owl-nav svg {
+    width: 24px;
+    height: 24px;
+  }
 }

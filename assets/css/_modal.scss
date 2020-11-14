@@ -13,12 +13,12 @@
     left: 0%;
     background: rgba($color: #000000, $alpha: 0.5);
     transition: all 500ms ease;
+    z-index: 100;
 }
 
 .modal-content{
     width: 40rem;
     margin: auto;
-    margin-top: 10rem;
     background: $light-color;
     box-shadow: 1px 7px 25px rgba($color: #000000, $alpha: 0.6);
     transition: all 500ms ease;
@@ -64,4 +64,12 @@
             }
         }
         }
+}
+.closeModal{
+    border-radius: 100px;
+    color: $light-color;
+    background: $secondary-color;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.8rem;
 }
