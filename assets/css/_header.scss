@@ -57,11 +57,12 @@ ul li{
 }
 
 .menu--item {
-    text-decoration: none;
+    text-decoration: none !important;
     color: $light-color;
     background-color: $secondary-color;
     padding: 10px;
     &:hover{
         background-color: $primary-color;
+        color: $light-color;
     }
 }

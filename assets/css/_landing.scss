@@ -44,6 +44,7 @@ html{
                 margin-left: 2%;
                 margin-bottom: -15px;
                 font-size: 30px;
+                font-weight: bold;
                 letter-spacing: 5px;
                 color: $secondary-color;
                 &.altern{
@@ -89,6 +90,8 @@ html{
         h3{
             margin-left: 100px;
             color: $secondary-color;
+            font-size: 1.3rem;
+            font-weight: bold;
         }
         p{
             width: 70%;
@@ -107,7 +110,7 @@ html{
 }
 
 .aboutus-footer{
-    height: 250px;
+    height: 350px;
     background: $primary-color;
     padding-bottom: 6rem;
     .aboutus-blank{
@@ -133,6 +136,10 @@ html{
                 object-fit: cover;
             }
         }
+        img{
+            width: 30rem;
+            margin-bottom: 2rem;
+        }
         h3{
             font-size: 2rem;
         }
@@ -140,8 +147,19 @@ html{
             width: 70%;
             font-size: 1.3rem;
         }
+        a{
+            text-decoration: none;
+            color: $light-color;
+            font-size: 1.7rem;
+            font-weight: bolder;
+            background: $primary-color;
+            padding: 10px 30px;
+            border-radius: 30px;
+            position: relative;
+            top: 5rem;
+        }
     }
-    .image-container{
+    .imagen-container{
         margin: 1.5rem;
     }
     .markbrand--container{
@@ -151,7 +169,7 @@ html{
         text-align: center;
         h2{
             font-size: 3rem;
-            width: 70%;
+            width: 75%;
             margin: auto;
         }
         p{
@@ -167,6 +185,7 @@ html{
             border-radius: 30px;
             text-decoration: none;
             font-size: 1.7rem;
+            font-weight: bolder;
             position: relative;
             top: 3rem;
         }
@@ -181,16 +200,17 @@ html{
 .sell--container{
     background: $primary-color;
     padding-top: 10rem;
-    padding-bottom: 4rem;
     img{
-        margin-left: 5rem;
+        margin: 0 0 3rem 5rem;
+        width: 40rem;
     }
     .sellandshow--container{
         display: flex;
         color: $light-color;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        padding: 0 5rem;
         .sell--info{
-            margin-left: 5rem;
+        
             h2{
                 font-size:2rem
             }
@@ -202,6 +222,7 @@ html{
                 text-decoration: none;
                 color: $light-color;
                 font-size: 1.7rem;
+                font-weight: bolder;
                 background: $secondary-color;
                 padding: 10px 30px;
                 border-radius: 30px;
@@ -244,7 +265,7 @@ html{
     }
 }
 .makebrand-footer{
-    height: 250px;
+    height: 370px;
     background: $secondary-color;
     padding-bottom: 6rem;
     .makebrand-blank{

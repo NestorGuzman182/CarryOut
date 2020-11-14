@@ -63,13 +63,14 @@ ul li {
 }
 
 .menu--item {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #FFFFFF;
   background-color: #404263;
   padding: 10px;
 }
 .menu--item:hover {
   background-color: #E64426;
+  color: #FFFFFF;
 }
 
 html {
@@ -122,6 +123,7 @@ html {
   margin-left: 2%;
   margin-bottom: -15px;
   font-size: 30px;
+  font-weight: bold;
   letter-spacing: 5px;
   color: #404263;
 }
@@ -166,6 +168,8 @@ html {
 .about-us .aboutus-article h3 {
   margin-left: 100px;
   color: #404263;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 .about-us .aboutus-article p {
   width: 70%;
@@ -182,7 +186,7 @@ html {
 }
 
 .aboutus-footer {
-  height: 250px;
+  height: 350px;
   background: #E64426;
   padding-bottom: 6rem;
 }
@@ -210,6 +214,10 @@ html {
   width: 100%;
   object-fit: cover;
 }
+.makeyoubrand .banner img {
+  width: 30rem;
+  margin-bottom: 2rem;
+}
 .makeyoubrand .banner h3 {
   font-size: 2rem;
 }
@@ -217,7 +225,18 @@ html {
   width: 70%;
   font-size: 1.3rem;
 }
-.makeyoubrand .image-container {
+.makeyoubrand .banner a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  background: #E64426;
+  padding: 10px 30px;
+  border-radius: 30px;
+  position: relative;
+  top: 5rem;
+}
+.makeyoubrand .imagen-container {
   margin: 1.5rem;
 }
 .makeyoubrand .markbrand--container {
@@ -228,7 +247,7 @@ html {
 }
 .makeyoubrand .markbrand--container h2 {
   font-size: 3rem;
-  width: 70%;
+  width: 75%;
   margin: auto;
 }
 .makeyoubrand .markbrand--container p {
@@ -244,6 +263,7 @@ html {
   border-radius: 30px;
   text-decoration: none;
   font-size: 1.7rem;
+  font-weight: bolder;
   position: relative;
   top: 3rem;
 }
@@ -259,18 +279,16 @@ html {
 .sell--container {
   background: #E64426;
   padding-top: 10rem;
-  padding-bottom: 4rem;
 }
 .sell--container img {
-  margin-left: 5rem;
+  margin: 0 0 3rem 5rem;
+  width: 40rem;
 }
 .sell--container .sellandshow--container {
   display: flex;
   color: #FFFFFF;
-  justify-content: space-around;
-}
-.sell--container .sellandshow--container .sell--info {
-  margin-left: 5rem;
+  justify-content: space-evenly;
+  padding: 0 5rem;
 }
 .sell--container .sellandshow--container .sell--info h2 {
   font-size: 2rem;
@@ -283,6 +301,7 @@ html {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 1.7rem;
+  font-weight: bolder;
   background: #404263;
   padding: 10px 30px;
   border-radius: 30px;
@@ -323,7 +342,7 @@ html {
 }
 
 .makebrand-footer {
-  height: 250px;
+  height: 370px;
   background: #404263;
   padding-bottom: 6rem;
 }
@@ -569,113 +588,4 @@ footer p {
   font-weight: bold;
   cursor: pointer;
   font-size: 1.8rem;
-}
-
-:root {
-  --main-white-color: white;
-  --main-black-color: black;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.static {
-  position: static;
-}
-
-.cover {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.owl-carousel .owl-slide {
-  position: relative;
-  height: 100vh;
-  background-color: lightgray;
-}
-
-.owl-carousel .owl-slide-animated {
-  transform: translateX(20px);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.05s;
-}
-
-.owl-carousel .owl-slide-animated.is-transitioned {
-  transform: none;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.5s;
-}
-
-.owl-carousel .owl-slide-title.is-transitioned {
-  transition-delay: 0.2s;
-}
-
-.owl-carousel .owl-slide-subtitle.is-transitioned {
-  transition-delay: 0.35s;
-}
-
-.owl-carousel .owl-slide-cta.is-transitioned {
-  transition-delay: 0.5s;
-}
-
-.owl-carousel .owl-dots,
-.owl-carousel .owl-nav {
-  position: absolute;
-}
-
-.owl-carousel .owl-dots .owl-dot,
-.owl-carousel .owl-nav [class*=owl-]:focus {
-  outline: none;
-}
-
-.owl-carousel .owl-dots .owl-dot span {
-  background: transparent;
-  border: 1px solid var(--main-black-color);
-  transition: all 0.2s ease;
-}
-
-.owl-carousel .owl-dots .owl-dot:hover span,
-.owl-carousel .owl-dots .owl-dot.active span {
-  background: var(--main-black-color);
-}
-
-.owl-carousel .owl-nav {
-  left: 50%;
-  top: 10%;
-  transform: translateX(-50%);
-  margin: 0;
-}
-
-.owl-carousel .owl-nav svg {
-  opacity: 0.3;
-  transition: opacity 0.3s;
-}
-
-.owl-carousel .owl-nav button:hover svg {
-  opacity: 1;
-}
-
-.owl-carousel .owl-nav [class*=owl-]:hover {
-  background: transparent;
-}
-
-section {
-  display: none;
-}
-
-@media screen and (max-width: 575px) {
-  .owl-carousel .owl-nav {
-    top: 5%;
-  }
-
-  .owl-carousel .owl-nav svg {
-    width: 24px;
-    height: 24px;
-  }
 }
