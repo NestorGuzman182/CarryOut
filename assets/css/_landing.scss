@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 #home{
-    padding-top: 10rem;
+    padding-top: 15rem;
 }
 .sidebar{
     .sidebar--item.orange{
@@ -12,7 +12,6 @@ html{
         width: 100px;
         text-align: center;
         margin: auto;
-        padding: 10px;
         background: $light-color;
         margin-bottom: 5px;
     }
@@ -22,21 +21,45 @@ html{
     display: flex;
     justify-content: space-evenly;
 }
+.main--container{
+    display: flex;
+    gap: 3rem;
+    .buy{
+        display: flex;
+        flex-direction: column;
+        background: $secondary-color;
+        width: 45%;
+        text-align: center;
+        gap: 2rem;
+        padding: 20px;
+    }.sell{
+        display: flex;
+        flex-direction: column;
+        background: $primary-color;
+        width: 45%;
+        text-align: center;
+        gap: 2rem;
+        padding: 20px;
+    }
+
+}
+
 .landing--module {
     margin-top: 5%;
     display: flex;
     .background--shape{
-        width: 50vh;
-        height: 120vh;
+        width: 110vh;
+        height: 110vh;
         background-color: $grey-scale;
         border-radius: 100px 3000px 2800px 50px;
         position: absolute;
         z-index: -1000;
     }
-    .brand--carryout{
+
         .brand--carryout--banner{
             margin: auto;
-            padding-left: 5%;
+            padding: 5%;
+            background: $grey-scale;
             img{
                 width: 30rem;
             }
@@ -75,7 +98,7 @@ html{
                 border-radius: 20px;
             }
         }
-    }
+    
 
     }
 #about-us{
@@ -305,7 +328,7 @@ html{
     display: flex;
     justify-content: space-evenly;
     .contact-us--container{
-        margin: 5rem;
+        width: 35rem,;
         h2{
             color: $light-color;
             background-color: $primary-color;
@@ -317,7 +340,15 @@ html{
         }
         form{
             display: inline-grid;
+            width: 70%;
             grid-gap: 20px;
+            .input-name{
+                display: flex;
+                gap: 1rem;
+                input{
+                    width: 15rem;
+                }
+            }
             input{
                 font-size: 1.7rem;
                 padding: 10px;
@@ -354,6 +385,7 @@ html{
              }.map--container{
                  iframe{
                      height: 100%;
+                     width: 25rem;
                  }
              }
         }

@@ -14,6 +14,9 @@ header {
   top: 0;
   z-index: 100;
   width: 100%;
+}
+
+.nav-main {
   box-shadow: -5px 10px 10px -12px rgba(0, 0, 0, 0.75);
 }
 
@@ -73,12 +76,53 @@ ul li {
   color: #FFFFFF;
 }
 
+.heropage-container {
+  display: flex;
+}
+
+.hero-nav {
+  width: 60%;
+  margin: 3rem;
+}
+
+.container-heroimage {
+  padding-top: 5rem;
+  width: 28rem;
+  margin: auto;
+  position: relative;
+  right: 0;
+}
+.container-heroimage img {
+  width: 100%;
+  object-fit: cover;
+  margin: 5rem;
+}
+
+.go-container {
+  text-align: center;
+  width: 100%;
+  margin-left: 5rem;
+  margin-top: -5rem;
+}
+.go-container h3 {
+  font-size: 1.8rem;
+}
+.go-container a {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #E64426;
+  padding: 5px 50px;
+  border-radius: 30px;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 #home {
-  padding-top: 10rem;
+  padding-top: 15rem;
 }
 
 .sidebar .sidebar--item.orange {
@@ -89,7 +133,6 @@ html {
   width: 100px;
   text-align: center;
   margin: auto;
-  padding: 10px;
   background: #FFFFFF;
   margin-bottom: 5px;
 }
@@ -100,26 +143,50 @@ html {
   justify-content: space-evenly;
 }
 
+.main--container {
+  display: flex;
+  gap: 3rem;
+}
+.main--container .buy {
+  display: flex;
+  flex-direction: column;
+  background: #404263;
+  width: 45%;
+  text-align: center;
+  gap: 2rem;
+  padding: 20px;
+}
+.main--container .sell {
+  display: flex;
+  flex-direction: column;
+  background: #E64426;
+  width: 45%;
+  text-align: center;
+  gap: 2rem;
+  padding: 20px;
+}
+
 .landing--module {
   margin-top: 5%;
   display: flex;
 }
 .landing--module .background--shape {
-  width: 50vh;
-  height: 120vh;
-  background-color: #F4F4F4;
+  width: 110vh;
+  height: 110vh;
+  background-color: #EEEFF1;
   border-radius: 100px 3000px 2800px 50px;
   position: absolute;
   z-index: -1000;
 }
-.landing--module .brand--carryout .brand--carryout--banner {
+.landing--module .brand--carryout--banner {
   margin: auto;
-  padding-left: 5%;
+  padding: 5%;
+  background: #EEEFF1;
 }
-.landing--module .brand--carryout .brand--carryout--banner img {
+.landing--module .brand--carryout--banner img {
   width: 30rem;
 }
-.landing--module .brand--carryout .brand--carryout--banner h1 {
+.landing--module .brand--carryout--banner h1 {
   margin-left: 2%;
   margin-bottom: -15px;
   font-size: 30px;
@@ -127,24 +194,24 @@ html {
   letter-spacing: 5px;
   color: #404263;
 }
-.landing--module .brand--carryout .brand--carryout--banner h1.altern {
+.landing--module .brand--carryout--banner h1.altern {
   color: #E64426;
 }
-.landing--module .brand--carryout .row--services {
+.landing--module .row--services {
   /*   display: flex;
    justify-content  */
 }
-.landing--module .brand--carryout .services {
+.landing--module .services {
   display: inline-grid;
   margin: 2rem;
   text-align: center;
   width: 10rem;
 }
-.landing--module .brand--carryout .services img {
+.landing--module .services img {
   max-height: 9rem;
   margin: auto;
 }
-.landing--module .brand--carryout .services .services--button {
+.landing--module .services .services--button {
   text-decoration: none;
   color: #FFFFFF;
   background: #E64426;
@@ -387,7 +454,7 @@ html {
   justify-content: space-evenly;
 }
 .contact-us .contact-us--container {
-  margin: 5rem;
+  width: 35rem;
 }
 .contact-us .contact-us--container h2 {
   color: #FFFFFF;
@@ -400,7 +467,15 @@ html {
 }
 .contact-us .contact-us--container form {
   display: inline-grid;
+  width: 70%;
   grid-gap: 20px;
+}
+.contact-us .contact-us--container form .input-name {
+  display: flex;
+  gap: 1rem;
+}
+.contact-us .contact-us--container form .input-name input {
+  width: 15rem;
 }
 .contact-us .contact-us--container form input {
   font-size: 1.7rem;
@@ -440,6 +515,7 @@ html {
 }
 .contact-us .contact--container .contact--general .map--container iframe {
   height: 100%;
+  width: 25rem;
 }
 
 footer {
