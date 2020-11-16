@@ -86,7 +86,7 @@
 }
 .resumen-cuenta{
     width: max-content;
-    background: red;
+    background: $grey-scale;
     padding: 10px;
 }
 .pay{
@@ -107,25 +107,4 @@
     position: absolute;
     z-index: -1;
     border-radius: 0 50% / 0 100%;
-    li{
-        position: absolute;
-        display: block;
-        width: 25px;
-        height: 25px;
-        background: $grey-scale;
-        animation: animate 20s linear infinite;
-        &:nth-child(1){
-            left: 86%;
-            width: 80px;
-            height: 80px;
-            animation-delay: 0s;
-        }
-        }&:nth-child(2){
-            left: 12%;
-            width: 30px;
-            height: 30px;
-            animation-delay: 1.5s;
-            animation-duration: 10s;
-        }
-    
     }
