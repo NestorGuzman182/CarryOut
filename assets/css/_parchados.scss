@@ -56,6 +56,9 @@
 .shop{
     display: flex;
     justify-content: space-around;
+    .container__show--product{
+        display: none;
+    }
     .show-product{
         display: flex;
         img{
@@ -85,4 +88,12 @@
     width: max-content;
     background: $grey-scale;
     padding: 10px;
+}
+.pay{
+    background: $light-color;
+    margin-top: 6rem;
+    padding: 10px;
+    img{
+        width: 10rem;
+    }
 }

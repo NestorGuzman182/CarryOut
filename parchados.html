@@ -108,7 +108,7 @@
             <div class="shop">
                 <div class="clothes" >
                     <div>
-                        <img src="assets/logos-icons/products/unbekannt_2.jpg" alt="">
+                        <a href="#show" id="product"><img src="assets/logos-icons/products/unbekannt_2.jpg" alt=""></a>
                         <span>The art Is Murder - Death Squad Chaqueta</span><br>
                         <span><strong>Valor Minimo 99,99 $</strong></span>
                     </div>
@@ -128,7 +128,7 @@
                         <span><strong>Valor Minimo 99,99 $</strong></span>
                     </div>
                 </div>
-                <div class="show-product">
+                <div class="container__show--product" id="show">
                     <div>
                         <img src="assets/logos-icons/products/unbekannt_2.jpg" alt="">
                         <p style="font-size: .8rem;">
@@ -158,14 +158,14 @@
                             <input type="color" value="#3646BF">
                         </div>
                         <label for="">CANTIDAD</label><br>
-                        <input type="number" min="1" class="cantidad"><br>
+                        <input type="number" min="1" class="cantidad" style="text-align: center;"><br>
                         <label for="">Precio</label><br>
                         <label for="" class="price">$ 225.000</label><BR></BR>
                         <button type="button" data-toggle="modal" data-target="#modal-carrito">AÑADIR AL CARRITO</button>
+
                         <div class="modal" tabindex="-1" id="modal-carrito">
                             <div class="modal-dialog">
-                             
-                                <div class="modal-header">
+                             <div class="modal-content">                                 <div class="modal-header">
                                   <h5 class="modal-title">Añadir a carrito</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
@@ -174,7 +174,7 @@
                                 <div class="modal-body">
                                     <div>
                                         <h3><strong>Chaqueta brand PQRS</strong></h3>
-                                        <p>Por Parchados</p>
+                                        <p><strong>Por Parchados</strong></p>
                                         <div style="display: flex;">
                                             <img src="assets/logos-icons/products/unbekannt_2.jpg" alt="" style="height: 20rem;">
                                             <div style="width: 10rem;">
@@ -184,13 +184,13 @@
                                         </div>
                                         <form action="">
                                             <br>
-                                            <label for="">Dirección</label><br>
+                                            <label for=""><strong>Dirección</strong></label><br>
                                             <input type="text"><br>
-                                            <label for="">Ciudad</label><br>
+                                            <label for=""><strong>Ciudad </strong> </label><br>
                                             <input type="text"><br>
-                                            <label for="">Nombres</label><br>
+                                            <label for=""><strong>Nombres</strong></label><br>
                                             <input type="text"><br>
-                                            <label for="">Apellidos</label><br>
+                                            <label for=""><strong>Apellidos</strong></label><br>
                                             <input type="text"><br>
                                         </form>
                                         </div>
@@ -218,6 +218,16 @@
                                                     <td style="text-align: end; font-weight: bolder; border: solid 1px black;">$233.500</td>
                                                 </tr>
                                             </table>
+                                            <div class="pay">
+                                                <label for=""><strong>Opcioens de pago</strong></label><br>
+                                                <img src="assets/logos-icons/paypal.png" alt=""><br>
+                                                <label for=""><strong>Otros medios de pago</strong></label><br>
+                                                <img src="assets/logos-icons/nequi.png" alt=""><br>
+                                                <label for=""><strong>Envio por</strong></label>
+                                                <p>Fedex</p>
+                                                <label for=""><strong>Fecha de entrega</strong></label>
+                                                <p>30/11/2020</p>
+                                            </div>
                                         </div>
                                     </div>
                                     
@@ -228,7 +238,7 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -238,4 +248,5 @@
 <script src="assets/js/modal.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+<script src="assets/js/showproduct.js"></script>
 </html>

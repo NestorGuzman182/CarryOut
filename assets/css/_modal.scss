@@ -77,10 +77,15 @@
 .modal-header, .modal-footer{
     background: $secondary-color;
     color: $light-color;
-    width: 42.7rem;
 }
 .modal-body{
     display: flex;
     width: fit-content;
     background: $light-color;
+    input{
+        width: 90%;
+    }
+}
+.modal-content{
+    width: fit-content;
 }

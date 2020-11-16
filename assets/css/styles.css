@@ -594,6 +594,9 @@ footer p {
   display: flex;
   justify-content: space-around;
 }
+.shop .container__show--product {
+  display: none;
+}
 .shop .show-product {
   display: flex;
 }
@@ -628,6 +631,15 @@ footer p {
   width: max-content;
   background: #EEEFF1;
   padding: 10px;
+}
+
+.pay {
+  background: #FFFFFF;
+  margin-top: 6rem;
+  padding: 10px;
+}
+.pay img {
+  width: 10rem;
 }
 
 .modal {
@@ -711,7 +723,6 @@ footer p {
 .modal-header, .modal-footer {
   background: #404263;
   color: #FFFFFF;
-  width: 42.7rem;
 }
 
 .modal-body {
@@ -720,4 +731,17 @@ footer p {
   width: -moz-fit-content;
   width: fit-content;
   background: #FFFFFF;
+}
+.modal-body input {
+  width: 90%;
+}
+
+.modal-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
 }
