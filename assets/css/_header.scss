@@ -23,6 +23,8 @@ header{
     p{
         margin: auto;
         margin-left: 20px;
+    }a{
+        font-weight: bolder;
     }
 }
 nav{
@@ -57,6 +59,7 @@ nav{
 ul li{
     list-style: none;
     justify-content: space-between;
+    font-weight: bolder;
 }
 
 .menu--item {

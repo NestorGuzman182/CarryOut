@@ -30,6 +30,9 @@ header {
   margin: auto;
   margin-left: 20px;
 }
+.followus__container a {
+  font-weight: bolder;
+}
 
 nav {
   display: flex;
@@ -63,6 +66,7 @@ nav .search--container img {
 ul li {
   list-style: none;
   justify-content: space-between;
+  font-weight: bolder;
 }
 
 .menu--item {
@@ -583,8 +587,8 @@ footer p {
 .content-products .clothes {
   display: flex;
   text-align: left;
-  width: 50%;
-  gap: 15px;
+  width: 90%;
+  gap: 20px;
 }
 .content-products .clothes img {
   width: 100%;
@@ -629,7 +633,7 @@ footer p {
 .resumen-cuenta {
   width: -webkit-max-content;
   width: max-content;
-  background: #EEEFF1;
+  background: red;
   padding: 10px;
 }
 
@@ -640,6 +644,38 @@ footer p {
 }
 .pay img {
   width: 10rem;
+}
+
+.box-area {
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #EEEFF1;
+  position: absolute;
+  z-index: -1;
+  border-radius: 0 50%/0 100%;
+}
+.box-area li {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #EEEFF1;
+  animation: animate 20s linear infinite;
+}
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box-area:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
 }
 
 .modal {
