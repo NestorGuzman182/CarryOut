@@ -4,6 +4,7 @@ let modal2 = document.getElementById('idModal2');
 let btnClose = document.getElementById('closeModal');
 let btnClose2 = document.getElementById('closeModal2');
 
+
 for(var i =0; i < botones.length; i++)
 {
 

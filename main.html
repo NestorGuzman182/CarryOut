@@ -113,7 +113,7 @@
                             </div>
 
                         </div>
-                        <a href=""><img src="assets/logos-icons/arrow.png" alt=""></a>
+                        <a data-toggle="modal" data-target="#arrow" style="cursor: pointer;"><img src="assets/logos-icons/arrow.png" alt=""></a>
                     </div>
                     <div class="sell">
                         <img src="assets/logos-icons/images/sellall.png" alt="">
@@ -137,7 +137,41 @@
                             </div>
 
                         </div>
-                        <a href=""><img src="assets/logos-icons/arrow.png" alt=""></a> 
+                        <a data-toggle="modal" data-target="#arrow" style="cursor: pointer;"><img src="assets/logos-icons/arrow.png" alt=""></a> 
+
+                        <div class="modal" tabindex="-1" id="arrow">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Regístrate</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <h4>Registra tus datos</h4>
+                                <div class="modal-body">
+                                    <div class="form--container">
+                                        <img src="assets/logos-icons/brandCarryOut.png" alt="">
+                                        <form>
+                                            <input type="text" placeholder="Nombres y Apellidos">
+                                            <input type="email" placeholder="Correo">
+                                            <input type="number" placeholder="Celular">
+                                            <select name="" id="" place>
+                                                <option hidden selected>¿Que deseas hacer?</option>
+                                                <option value="">Quiero Comprar</option>
+                                                <option value="">Quiero Vender</option>
+                                            </select>
+                                            <input type="text" placeholder="Empresa">
+                                            <input type="password" placeholder="Contraseña">
+                                            <input type="text" placeholder="Confirma tu Contraseña">
+                                            <button>Registrar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div></div>
@@ -358,14 +392,42 @@
                 <img src="assets/logos-icons/images/banner-makeyourbrand.png" alt="">
             </div>
             <div>
-              
                 <img src="assets/logos-icons/images/makeyoubrand.png" alt="">
-
                 <h3>De principio a fin</h3>
                 <p>
                     Desarrollamos tu marca desde la  imagen corporativa hasta la creación de las diferentes  líneas de productos  y colecciones  
                 </p>
-                <a href="">CONTÁCTANOS</a>
+                <a data-toggle="modal" data-target="#call" style="cursor: pointer;">CONTÁCTANOS</a>
+
+                
+                    <div class="modal" tabindex="-1" id="call">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Crea tu marca</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body" style="display: flex;">
+                              <div style="width: 15rem; margin: auto;">
+                                 <img src="assets/logos-icons/customer.jpg" alt="" style="width: 100%; object-fit: cover;">
+                                 <p style="color: #404263; font-size: .8rem; text-align: center; margin: 0; width: 100%; font-weight: bolder;">Uno de nuestros asesores se comunicará contigo.</p>
+                              </div>
+                              <div class="form--container"> 
+                                <form>
+                                    <input type="text" placeholder="Nombres y Apellidos">
+                                    <input type="email" placeholder="Correo">
+                                    <input type="number" placeholder="Celular">
+                                    <input type="text" placeholder="Empresa">
+                                    <button>Enviar</button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="imagen-container">
@@ -376,13 +438,13 @@
                 <h2>Adquiere una asesoría personalizada</h2>
                 <p>Un experto del equipo de trabajo de Carry Out  te ayudará con todo el proceso creativo para llevar a cabo lo que buscas</p>
                 <p><strong>-Crea tu marca:</strong> Ayuda a tus clientes a conectarse con tu negocio de acuerdo a tu personalidad</p><br>
-                <a class="btn-inicia" href="">INICIA AHORA</a>
+                <a class="btn-inicia" data-toggle="modal" data-target="#arrow">INICIA AHORA</a>
             </div>
             <div>
                 <h2>Crea el logo de tu marca bajo tus criterios</h2>
                 <p>Cuéntanos que quieres transmitir con tu emprendimiento, referentes, colores, símbolos y todo lo que creas necesario </p>
                 <p><strong>Destácate</strong> de la competencia y haz tu negocio inolvidable </p><br><br>
-                <a class="btn-inicia" href="">CREA AHORA</a>
+                <a class="btn-inicia" data-toggle="modal" data-target="#arrow">CREA AHORA</a>
             </div>
         </div>
     </section>
@@ -396,7 +458,7 @@
                 <div class="sell--info">
                     <h2>Da el siguiente paso</h2>
                     <p>Comparte tus diseños y contenido en nuestra plataforma para obtener un mayor alcance </p>
-                    <a href="#">CONTÁCTANOS</a>
+                    <a data-toggle="modal" data-target="#call">CONTÁCTANOS</a>
                 </div>
                 <div class="media--container">
                     <img src="assets/logos-icons/images/sell.png" alt="">
