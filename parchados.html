@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
         <title>Carry Out</title>
-    </head>
 </head>
 <body>
     <header>
@@ -18,11 +17,11 @@
         </div>
         <nav>
             <ul>
-                <li><a class="menu--item" href="index.html#about-us">Sobre nosotros</a></li>
-                <li><a class="menu--item" href="index.html#makeyoubrand">Crea tu marca</a></li>
-                <li><a class="menu--item" href="index.html#Sell">Exhibe y vende tu marca</a></li>
-                <li><a class="menu--item" href="index.html#artist">Marcas-Artistas</a></li>
-                <a class="brand-logo" href="index.html#home"><img src="assets/logos-icons/brandCarryOut.png" alt=""></a>
+                <li><a class="menu--item" href="main.html#about-us">Sobre nosotros</a></li>
+                <li><a class="menu--item" href="main.html#makeyoubrand">Crea tu marca</a></li>
+                <li><a class="menu--item" href="main.html#Sell">Exhibe y vende tu marca</a></li>
+                <li><a class="menu--item" href="main.html#artist">Marcas-Artistas</a></li>
+                <a class="brand-logo" href="main.html#home"><img src="assets/logos-icons/brandCarryOut.png" alt=""></a>
                 <li><a id="btnRegistro" class="menu--item btn-modal openModal" href="#">Registro</a></li>
                 <li><a id="btnSesion" class="menu--item btn-modal openModal" href="#">Inicio sesion</a></li>
                 <li><a href=""><img src="assets/logos-icons/carrito.png" alt="carrito" width="50"></a></li>
@@ -81,7 +80,7 @@
     <section class="makeyoubrand" style="padding-top: 1rem;"> 
         <div class="banner pilot" style="padding-bottom: 5rem;">
             <div class="logo-container parch">
-                <img src="assets/logos-icons/images/parchados.png" alt="" width="300px" style="margin-left:5rem;">
+                <img src="assets/logos-icons/images/parchados.png" alt="" style="width: 100%;" >
             </div>
             <div class="parch-score">
                 <h2>PARCHADOS COLOMBIA</h2>
@@ -100,20 +99,143 @@
         </div>
         <div class="content-products">
             <img src="assets/logos-icons/icons-shop.png" class="icons-shop" alt="">
-            <UL>
+            <ul>
                 <li>COLOR</li>
                 <li>TALLA</li>
                 <li>PRECIO</li>
                 <li>GENERO</li>
-            </UL>
-            <div class="clothes" >
-                <img src="assets/logos-icons/images/clothes.png" alt="">
-            </div>
-            <div class="clothes">
-                <img src="assets/logos-icons/images/clothes-w.png" alt="">
+            </ul>
+            <div class="shop">
+                <div class="clothes" >
+                    <div>
+                        <img src="assets/logos-icons/products/unbekannt_1.jpg" alt="">
+                        <span>The art Is Murder - Death Squad Chaqueta</span><br>
+                        <span><strong>Valor Minimo 99,99 $</strong></span>
+                    </div>
+                    <div>
+                        <img src="assets/logos-icons/products/unbekannt_2.jpg" alt="">
+                        <span>The art Is Murder - Death Squad Chaqueta</span><br>
+                        <span><strong>Valor Minimo 99,99 $</strong></span>
+                    </div>
+                    <div>
+                        <img src="assets/logos-icons/products/unbekannt_4.jpg" alt="">
+                        <span>The art Is Murder - Death Squad Chaqueta</span><br>
+                        <span><strong>Valor Minimo 99,99 $</strong></span>
+                    </div>
+                    <div>
+                        <img src="assets/logos-icons/products/unbekannt_5.jpg" alt="">
+                        <span>The art Is Murder - Death Squad Chaqueta</span><br>
+                        <span><strong>Valor Minimo 99,99 $</strong></span>
+                    </div>
+                </div>
+                <div class="show-product">
+                    <div>
+                        <img src="assets/logos-icons/products/unbekannt_2.jpg" alt="">
+                        <p style="font-size: .8rem;">
+                            Nuestros crewnecks  para hombre y mujer son supersuaves, cómodos y se ajustan perfectamente todos sabemos lo valiosa que puede  ser una buen crewneck . <br>
+    
+                             <strong>Confeccionado con 100% algodón de punto fino</strong> 
+                              <strong>Peinado para suavidad y comodidad</strong>  
+                        </p>
+                    </div>
+                    <form action="">
+                        <h3><strong>Chaqueta brand PQRS</strong></h3>
+                        <p>Por Parchados</p>
+                        <label for="">ESTILO</label><br>
+                        <select name="" id="">
+                            <option value="Chaqueta slim fit hombre">Chaqueta slim fit hombre</option>
+                        </select><br>
+                        <label for="">TALLA</label><br>
+                        <select name="" id="">
+                            <option value="Grande">Grande</option>
+                            <option value="Mediana">Mediana</option>
+                            <option value="Pequeña">Pequeña</option>
+                        </select><br>
+                        <label for="">COLORES</label>
+                        <div class="colors">
+                            <input type="color" value="#FFFFFF">
+                            <input type="color" value="#000000">
+                            <input type="color" value="#3646BF">
+                        </div>
+                        <label for="">CANTIDAD</label><br>
+                        <input type="number" min="1" class="cantidad"><br>
+                        <label for="">Precio</label><br>
+                        <label for="" class="price">$ 225.000</label><BR></BR>
+                        <button type="button" data-toggle="modal" data-target="#modal-carrito">AÑADIR AL CARRITO</button>
+                        <div class="modal" tabindex="-1" id="modal-carrito">
+                            <div class="modal-dialog">
+                             
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Añadir a carrito</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <h3><strong>Chaqueta brand PQRS</strong></h3>
+                                        <p>Por Parchados</p>
+                                        <div style="display: flex;">
+                                            <img src="assets/logos-icons/products/unbekannt_2.jpg" alt="" style="height: 20rem;">
+                                            <div style="width: 10rem;">
+                                                <p style="margin: 0;"><STRong>PRECIO</STRong></p>
+                                                <label for="" class="price">$ 225.000</label><BR></BR>
+                                            </div>
+                                        </div>
+                                        <form action="">
+                                            <br>
+                                            <label for="">Dirección</label><br>
+                                            <input type="text"><br>
+                                            <label for="">Ciudad</label><br>
+                                            <input type="text"><br>
+                                            <label for="">Nombres</label><br>
+                                            <input type="text"><br>
+                                            <label for="">Apellidos</label><br>
+                                            <input type="text"><br>
+                                        </form>
+                                        </div>
+                                        <div class="resumen-cuenta">
+                                            <h3>Resumen de tu orden</h3>
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td>SUBTOTAL</td>
+                                                    <td style="text-align: end;">$ 225.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>DESCUENTO</td>
+                                                    <td style="text-align: end;">10%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ENVIO</td>
+                                                    <td style="text-align: end;">$8.500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td style="text-align: end; font-weight: bolder; border: solid 1px black;">$233.500</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                               
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Comprar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 </body>
 <script src="assets/js/modal.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
 </html>

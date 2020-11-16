@@ -73,3 +73,14 @@
     cursor: pointer;
     font-size: 1.8rem;
 }
+
+.modal-header, .modal-footer{
+    background: $secondary-color;
+    color: $light-color;
+    width: 42.7rem;
+}
+.modal-body{
+    display: flex;
+    width: fit-content;
+    background: $light-color;
+}

@@ -44,10 +44,45 @@
         font-weight: bolder;
     }
     .clothes{
+        display: flex;
         text-align: left;
-        width: 70%;
+        width: 50%;
+        gap: 15px;
         img{
             width: 100%;
         }
     }
+}
+.shop{
+    display: flex;
+    justify-content: space-around;
+    .show-product{
+        display: flex;
+        img{
+            background: #D9DCF9;
+        }p{
+            width: 20rem;
+        }
+        select{
+            font-size: 1.8rem;
+            width: 100%;
+        }.cantidad{
+            font-size: 1.7rem;
+            width: 50%;
+        }.price{
+            font-size: 2rem;
+            font-weight: bolder;
+        }button{
+            color: $light-color;
+            background: $primary-color;
+            padding: 10px 30px;
+            font-weight: bolder;
+            border-radius: 20px;
+        }
+    }
+}
+.resumen-cuenta{
+    width: max-content;
+    background: $grey-scale;
+    padding: 10px;
 }
