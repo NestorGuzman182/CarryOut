@@ -561,6 +561,7 @@ footer p {
 
 .parch-score {
   margin: auto;
+  margin-left: 6rem;
 }
 .parch-score h2 {
   background: #E64426;
