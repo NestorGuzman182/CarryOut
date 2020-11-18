@@ -390,6 +390,12 @@ html {
   object-fit: cover;
   width: 100%;
 }
+.sell--container .sellandshow--container .media--container iframe {
+  margin: auto;
+  border-radius: 20px;
+  border: 30px solid #404263;
+  margin-left: -2rem;
+}
 
 .carryout-steps {
   display: flex;
@@ -416,11 +422,6 @@ html {
 .carryout-steps img {
   width: 15rem;
   margin-left: 7rem;
-}
-.carryout-steps iframe {
-  margin: auto;
-  border-radius: 20px;
-  border: 15px solid #E64426;
 }
 
 .makebrand-footer {
@@ -552,7 +553,7 @@ html {
   top: 0;
   display: flex;
   flex-wrap: wrap;
-  width: 70vw;
+  width: 75vw;
   margin-left: 0;
 }
 

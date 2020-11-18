@@ -258,6 +258,11 @@ html{
             img{
                 object-fit: cover;
                 width: 100%;
+            }iframe{
+                margin: auto;
+                border-radius: 20px;
+                border: 30px solid $secondary-color ;
+                margin-left: -2rem;
             }
         }
     }
@@ -288,11 +293,7 @@ html{
         width: 15rem;
         margin-left: 7rem;
     }
-    iframe{
-        margin: auto;
-        border-radius: 20px;
-        border: 15px solid $primary-color ;
-    }
+
 }
 .makebrand-footer{
     height: 370px;
@@ -417,7 +418,7 @@ html{
     top: 0;
     display: flex;
     flex-wrap: wrap;
-    width: 70vw;
+    width: 75vw;
     margin-left: 0;
 }
 .modal-content.custom{
