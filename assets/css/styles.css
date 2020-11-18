@@ -92,10 +92,6 @@ ul li {
   display: flex;
 }
 
-.hero-nav {
-  margin: 3rem;
-}
-
 .container-heroimage {
   padding-top: 5rem;
   width: 28rem;
