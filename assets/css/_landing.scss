@@ -263,6 +263,8 @@ html{
     }
 }
 .carryout-steps{
+    display: flex;
+    justify-content: space-around;
     background-repeat: no-repeat;
     background-blend-mode: lighten;
     background-position-y: bottom;
@@ -285,6 +287,11 @@ html{
     img{
         width: 15rem;
         margin-left: 7rem;
+    }
+    iframe{
+        margin: auto;
+        border-radius: 20px;
+        border: 15px solid $primary-color ;
     }
 }
 .makebrand-footer{

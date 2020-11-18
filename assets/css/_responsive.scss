@@ -24,7 +24,6 @@
             text-align: center;
             div{
                 flex-direction: column;
-                gap: 3rem;
                 li{
                     width: 100%;
                     background: $secondary-color;
@@ -151,8 +150,11 @@
         padding: 0 !important;
     }
     .carryout-steps{
+        flex-direction: column;
         img, li div{
             margin: 0;
+        }iframe{
+            width: 100%;
         }
     }.title-artist{
         width: 90% !important;
@@ -169,5 +171,42 @@
     }
     .background--shape{
         width: 100vw;
+    }
+
+    /** tiendas**/
+    .parch-score{
+        margin-left: .5rem;
+        width: 100%;
+        h2{
+            width: 90%;
+            margin: auto;
+        }
+        .score-container{
+            margin: 15px auto;
+        }p{
+            width: 100% !important;
+            padding: 10px;
+        }
+    }
+    .logo-container.parch{
+        width: auto;
+    }
+    .clothes{
+        flex-direction: column;
+        margin: auto;
+    }
+    .container__show--product{
+        flex-direction: column;
+        padding-right: 4rem;
+        margin: 4rem ;
+        .modal-body{
+            flex-direction: column;
+            width: 100vw;
+        }
+    }
+    .content-products ul{
+        font-size: 1rem;
+        justify-content: space-evenly;
+        width: 20rem;
     }
 } 
