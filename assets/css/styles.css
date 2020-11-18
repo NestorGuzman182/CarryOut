@@ -384,7 +384,8 @@ html {
   top: 5rem;
 }
 .sell--container .sellandshow--container .media--container {
-  width: 25rem;
+  margin-left: -2rem;
+  margin-bottom: 1.3rem;
 }
 .sell--container .sellandshow--container .media--container img {
   object-fit: cover;
@@ -1062,6 +1063,10 @@ footer p {
 
   .price {
     width: 1.6rem;
+  }
+
+  .media--container {
+    width: 100%;
   }
 }
 * {
