@@ -4,7 +4,15 @@
 @import 'landing.scss';
 @import "parchados.scss";
 @import 'modal.scss';
+@import 'responsive.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body{
     font-family: $font-family;
+    overflow-x: hidden;
 }

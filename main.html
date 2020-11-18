@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
     <link rel="stylesheet" href="assets/css/styles.css"> 
   <!--   <link rel="preconnect" href="https://fonts.gstatic.com">  -->
@@ -15,8 +15,9 @@
             <a class="menu--item" href="main.html#contact-us">CONTÁCTANOS</a>
             <p>Con Carry Out, sin complicaciones</p>
         </div>
+        <i class="fas fa-bars menu-btn" id="toggle-menu"></i>
         <nav>
-            <ul class="">
+            <ul class="hero-nav" id="menu">
                 <li><a class="menu--item" href="main.html#about-us">SOBRE NOSOTROS</a></li>
                 <li><a class="menu--item" href="main.html#makeyoubrand">CREA TU MARCA</a></li>
                 <li><a class="menu--item" href="main.html#Sell">EXHIBE Y VENDE TU MARCA</a></li>
@@ -118,7 +119,7 @@
                     <div class="sell">
                         <img src="assets/logos-icons/images/sellall.png" alt="">
                         <div>
-                            <a data-toggle="modal" data-target="#vender"><img src="assets/logos-icons/images/quiero vender.png" alt="" style="width: 100%; object-fit: cover;"></a> 
+                            <a data-toggle="modal" data-target="#vender"><img src="assets/logos-icons/images/quiero vender.png" alt="" style="width: 250px; object-fit: cover;"></a> 
 
                             <div class="modal" tabindex="-1" id="vender">
                                 <div class="modal-dialog">
@@ -227,7 +228,7 @@
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
-                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -391,7 +392,7 @@
             <div class="banner-container">
                 <img src="assets/logos-icons/images/banner-makeyourbrand.png" alt="">
             </div>
-            <div>
+            <div class="makeyourbrand--container">
                 <img src="assets/logos-icons/images/makeyoubrand.png" alt="">
                 <h3>De principio a fin</h3>
                 <p>
@@ -477,7 +478,7 @@
                     <li><span>3</span> Escoge las líneas de productos que te interesan</li>
                         <img src="assets/logos-icons/images/labels.png" alt="">
                     <li>
-                        <SPAN>4</SPAN><div for="" style="background: #404263; text-align: center; width: 200px; margin-left: 150px;color: white;">REALIZA TU PAGO</div>
+                        <SPAN>4</SPAN><div for="" style="background: #404263; text-align: center; width: 200px; margin-left: 4rem;color: white;">REALIZA TU PAGO</div>
                     </li>
                     <li><span>5</span> Ya está lista tu tienda con tu propia URL</li>
                         <img src="assets/logos-icons/images/linkurl.png" alt="">
@@ -551,9 +552,11 @@
 <!-- Compiled and minified JavaScript -->
 
 <script src="assets/js/modal.js"></script>
-
+<script src="assets/js/menu.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+<script src="https://kit.fontawesome.com/b88c9ebb56.js" crossorigin="anonymous"></script>
+
 <!-- <script> var $j = jQuery.noConflict();</script> -->
 </html>
 

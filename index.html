@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="assets/css/styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
     <title>Carry Out</title>
 </head>
 <body>
     <header>
-        <nav class="hero-nav" style="box-shadow: none">
-            <ul class="" st>
+        <i class="fas fa-bars menu-btn" id="toggle-menu"></i>
+        <nav class="hero-nav" style="box-shadow: none" id="menu">
+            <ul class="menu-container" >
                 <div style="display: flex; gap: 15px">
                     <li><a class="menu--item" href="main.html#about-us">Sobre nosotros</a></li>
                     <li><a class="menu--item" href="main.html#makeyoubrand">Crea tu marca</a></li>
-                    <li><a class="menu--item" href="main.html#Sell">Exhibe y vende tu marca</a></li>
+                    <li><a class="menu--item" href="main.html#Sell">Exhíbe y vende tu marca</a></li>
                     <li><a class="menu--item" href="main.html#artist">Marcas-Artistas</a></li>
                 </div>
                 <div style="display: flex; gap: 15px">
                     <li><a id="btnRegistro" class="menu--item btn-modal openModal" href="#">Registro</a></li>
-                    <li><a id="btnSesion" class="menu--item btn-modal openModal" href="#">Inicio sesion</a></li>
+                    <li><a id="btnSesion" class="menu--item btn-modal openModal" href="#">Início sesión</a></li>
                 </div>
             </ul>
         </nav>
@@ -71,7 +72,7 @@
         </div>
     </div>
         <section class="heropage-container">
-            <div style="width: 40%;">
+            <div class="container--landing" style="width: 40%;">
                 <div class="container-heroimage">
                     <img src="assets/logos-icons/brandCarryOut 2.png" alt="">
                 </div>
@@ -87,4 +88,6 @@
     </main>
 </body>
 <script src="assets/js/modal.js"></script>
+<script src="https://kit.fontawesome.com/b88c9ebb56.js" crossorigin="anonymous"></script>
+<script src="assets/js/menu.js"></script>
 </html>

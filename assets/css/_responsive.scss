@@ -1,0 +1,173 @@
+@media(max-width: 768px){
+    .menu-btn.fa-bars{
+        display: block;
+        color: $secondary-color;
+        font-size: 1.8rem;
+        padding: .5rem;
+        margin: .5rem;
+        position: fixed;
+        z-index: 100;
+        background-color: $light-color;
+        border-radius: 100%;
+    }
+    .hero-nav{
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        width: 100%;
+        margin: 0;
+        height: 100vh;
+        transition: .3s;
+        .menu-container{
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: center;
+            div{
+                flex-direction: column;
+                gap: 3rem;
+                li{
+                    width: 100%;
+                    background: $secondary-color;
+                    padding: 10px;
+                    height: 60px;
+                    a{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }.brand-logo{
+            order: -1;
+        }li{
+            height: 30px;
+            .menu--item{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .hero-nav.is-active{
+        left: 0;
+        background: rgba($color: #FFFFFF, $alpha: .95);
+    }
+    .heropage-container{
+        flex-direction: column;
+        text-align: center;
+        .container--landing{
+            width: 60% !important;
+        }
+    }
+    .container-heroimage{
+        width: 14rem;
+        padding-top: 0;
+    }
+    .go-container{
+        margin: 1rem 5rem;
+    }
+
+
+/*  Modales responsive */
+
+    .form--container{
+        flex-direction: column;
+        img{
+            margin: auto !important;
+        }
+    }
+    .modal-body iframe{
+        width: 100%;
+    }
+/* menu landings */
+    .nav-main{
+        nav{
+            position: fixed;
+        }
+        ul {
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            background: $light-color;
+        }
+    }
+
+    #about-us, #makeyoubrand{
+        padding-top: 0;
+    }
+    .sidebar{
+        display: none;
+    }
+    .carryout--container, .banner, .sellandshow--container, .mark-container, .contact-us{
+        flex-direction: column;
+        gap: 2rem;
+        .main--container{
+            flex-direction: column;
+            .buy, .sell{
+                width: 90%;
+                margin: auto;
+            }
+        }
+        .brand--carryout--banner img, .banner-container img{
+            width: 20rem;
+        }
+        .carousel.slide{
+            width: 100% !important ;
+        }
+    }
+    .aboutus-article{
+        width: 100% !important;
+        font-size: 1rem;
+        img{
+            width: 17rem;
+            margin: 0;
+        }h3, p{
+            margin: 0 !important;
+            width: 100% !important;
+            padding: 20px;
+        }
+    }
+    .banner-container{
+        width: 25rem !important;
+    }
+    .makeyourbrand--container, .imagen-container, .sell--container, .sellbrand-container,.artist .title-artist{
+        text-align: center;
+        img{
+            width: 100% !important;
+            margin: 0 !important;
+        }h3, h2, p {
+            width: 100% !important;
+            padding: 20px;
+            margin: 0 !important;
+        }a{
+            top: 0 !important;
+        }
+    }
+    .markbrand--container{
+        flex-direction: column;
+        gap: 5rem;
+        h2{
+            font-size: 1.8rem !important;
+        }p{
+            font-size: 1.3rem !important;
+        }
+    }.sellandshow--container{
+        padding: 0 !important;
+    }
+    .carryout-steps{
+        img, li div{
+            margin: 0;
+        }
+    }.title-artist{
+        width: 90% !important;
+    }.input-name{
+        flex-direction: column;
+        input{
+            width: 100% !important;
+        }
+    }.contact--general{
+        flex-direction: column;
+        margin: 0;
+        width: 100vw;
+        margin-left: -20vw;
+    }
+    .background--shape{
+        width: 100vw;
+    }
+} 
