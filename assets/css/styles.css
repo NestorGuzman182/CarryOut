@@ -92,10 +92,6 @@ ul li {
   display: flex;
 }
 
-.hero-nav {
-  margin: 3rem;
-}
-
 .container-heroimage {
   padding-top: 5rem;
   width: 28rem;
@@ -535,6 +531,33 @@ html {
 .contact-us .contact--container .contact--general .map--container iframe {
   height: 100%;
   width: 25rem;
+}
+
+.header-custom {
+  display: flex;
+  justify-content: space-around;
+}
+.header-custom form {
+  padding: 20px;
+}
+.header-custom form label {
+  background: #E64426;
+  color: #FFFFFF;
+  font-weight: bolder;
+  padding: 7px;
+}
+
+.custom-products {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vw;
+  margin-left: 0;
+}
+
+.modal-content.custom {
+  left: -20vw;
 }
 
 footer {
@@ -1014,6 +1037,22 @@ footer p {
     font-size: 1rem;
     justify-content: space-evenly;
     width: 20rem;
+  }
+
+  .header-custom {
+    flex-direction: column;
+  }
+  .header-custom img {
+    margin: auto;
+  }
+
+  .modal-content.custom {
+    left: 0;
+    justify-content: center;
+  }
+
+  .modal-body.custom {
+    margin: auto;
   }
 }
 * {

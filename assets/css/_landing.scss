@@ -399,6 +399,32 @@ html{
     }
 }
 
+.header-custom{
+    display: flex;
+    justify-content: space-around;
+    form{
+        padding: 20px;
+        label{
+            background: $primary-color;
+            color: $light-color;
+            font-weight: bolder;
+            padding: 7px;
+        }
+    }
+}
+.custom-products{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin-left: 0;
+}
+.modal-content.custom{
+    left: -20vw;
+}
+
+
 footer{
     height: 120px;
     background: $primary-color;
