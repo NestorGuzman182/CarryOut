@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { LayoutComponent } from './shared/components/layout/layout.component';
+import { LayoutComponent } from './shared/layout/layout.component';
 
 export const routes: Routes = [
   {
