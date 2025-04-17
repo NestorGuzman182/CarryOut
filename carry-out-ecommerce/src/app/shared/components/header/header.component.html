@@ -1,0 +1,60 @@
+<header class="nav-main">
+  <div class="followus__container">
+    <a class=" btn secondary menu--item" href="main.html#contact-us">CONTÁCTANOS</a>
+    <p>Con Carry Out, sin complicaciones</p>
+  </div>
+  <i class="fas fa-bars menu-btn" id="toggle-menu"></i>
+  <nav>
+    <ul class="hero-nav" id="menu">
+      <li>
+        <a class="btn secondary" href="main.html#about-us">SOBRE NOSOTROS</a>
+      </li>
+      <li>
+        <a class="btn secondary" href="main.html#makeyoubrand">CREA TU MARCA</a>
+      </li>
+      <li>
+        <a class="btn secondary" href="main.html#Sell">EXHIBE Y VENDE TU MARCA</a>
+      </li>
+      <li><a class="btn secondary" routerLink="/products">MARCAS-ARTISTAS</a></li>
+      <a class="brand-logo" href="index.html#home">
+        <img src="assets/logos-icons/brandCarryOut.png" alt="logo carry" /></a>
+      <li>
+        <a id="btnRegistro" class="btn secondary btn-modal openModal" routerLink="/auth">REGÍSTRO / SESIÓN</a>
+      </li>
+      <li>
+        <a href=""><img src="assets/logos-icons/carrito.png" alt="carrito" width="40" /></a>
+        <span class="counter"> {{ counter }} </span>
+      </li>
+      <li>
+        <div class="search--container">
+          <input type="text" placeholder="Encuentra algo genial" />
+          <img src="assets/logos-icons/search-icon.png" alt="search" />
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="mobile-menu">
+  <div class="mobile-menu__container">
+    <button (click)="toggleMenu()">
+      <img src="assets/logos-icons/menu-bars.svg" alt="nav menu" width="30" />
+    </button>
+    <a href="">
+      <img width="70" src=" assets/logos-icons/brandCarryOut.png" alt="brand-logo">
+    </a>
+    <a href="">
+      <img src="assets/logos-icons/carrito.png" alt="carrito" width="40" />
+      <span class="counter"> {{ counter }} </span>
+    </a>
+  </div>
+  <div class="side-menu" [class.active]="showMenu">
+    <button (click)="toggleMenu()">Close</button>
+    <ul>
+      <li><a class="btn tertiary" href="main.html#about-us">SOBRE NOSOTROS</a></li>
+      <li><a class="btn tertiary" href="main.html#makeyoubrand">CREA TU MARCA</a></li>
+      <li><a class="btn tertiary" href="main.html#Sell">EXHIBE Y VENDE TU MARCA</a></li>
+      <li><a class="btn tertiary" routerLink="/products">MARCAS-ARTISTAS</a></li>
+      <li><a id="btnRegistro" class="btn secondary btn-modal openModal" routerLink="/auth">REGÍSTRO / SESIÓN</a></li>
+    </ul>
+  </div>
+</div>
