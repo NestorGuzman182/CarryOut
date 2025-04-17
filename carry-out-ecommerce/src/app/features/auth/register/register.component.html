@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Registrate</h1>
+  <form #myForm="ngForm" (ngSubmit)="onRegister()">
+    <div class="input-group">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" [(ngModel)]="register.name" required>
+      <p class="error" *ngIf="!register.name || register.name.length <= 3">El nombre es requerido</p>
+    </div>
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" [(ngModel)]="register.email" required>
+      <p class="error" *ngIf="!register.email || register.email.length <= 3">El email es requerido</p>
+    </div>
+    <div class="input-group">
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" [(ngModel)]="register.password" required>
+      <p class="error" *ngIf="!register.password || register.name.length <= 3">La contraseña es requerida</p>
+    </div>
+    <button class="btn primary"  type="submit" [disabled]="!myForm.valid">REGISTRARME</button>
+  </form>
+</div>

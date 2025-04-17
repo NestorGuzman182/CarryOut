@@ -1,0 +1,25 @@
+<div class="auth-container" [class.register-mode]="isRegisterMode">
+  <div class="forms-container">
+    <div class="form-box">
+        <app-login *ngIf="!isRegisterMode" @fadeSlide />
+        <app-register *ngIf="isRegisterMode" @fadeSlide />
+    </div>
+  </div>
+
+  <div class="panels-container">
+    <div class="panel left-panel" *ngIf="!isRegisterMode">
+      <div class="content">
+        <h3>¿Nuevo aquí?</h3>
+        <p>Regístrate y comienza tu aventura.</p>
+        <button class="btn call-to-action" (click)="toggleMode()">Registrarse</button>
+      </div>
+    </div>
+    <div class="panel right-panel" *ngIf="isRegisterMode">
+      <div class="content">
+        <h3>¿Ya tienes cuenta?</h3>
+        <p>Inicia sesión con tu cuenta.</p>
+        <button class="btn call-to-action" (click)="toggleMode()">Iniciar Sesión</button>
+      </div>
+    </div>
+  </div>
+</div>

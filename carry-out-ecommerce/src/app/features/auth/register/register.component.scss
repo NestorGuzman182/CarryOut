@@ -1,0 +1,23 @@
+.container {
+  width: 300px;
+  margin: auto;
+  h1 {
+    text-align: center;
+  }
+}
+
+form {
+  margin-top: 4rem;
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    label {
+      margin-bottom: 4px;
+    }
+  }
+  button {
+    margin-top: 1rem;
+    width: -webkit-fill-available;
+  }
+}
