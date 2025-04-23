@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { StoreService } from '../../../core/services/store/store.service';
 
@@ -9,7 +9,7 @@ import { StoreService } from '../../../core/services/store/store.service';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
   private storeService = inject(StoreService);
   showMenu = false;
