@@ -11,7 +11,8 @@
       <input type="password" id="password" name="password" [(ngModel)]="login.password" required>
       <p class="error" *ngIf="!login.password">La contraseña es requerida</p>
     </div>
-    <button class="btn primary"  type="submit" [disabled]="!myForm.valid">REGISTRARME</button>
+    <button class="btn primary"  type="submit" [disabled]="!myForm.valid">INICIAR SESION</button>
   </form>
+  <button class="btn primary"  (click)="getProfile()">PERFIL</button>
 </div>
 

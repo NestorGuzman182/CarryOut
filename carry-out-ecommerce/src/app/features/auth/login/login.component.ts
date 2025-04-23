@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { AuthService } from '../../../core/services/auth/auth.service';
+
 
 @Component({
   selector: 'app-login',
@@ -14,9 +16,23 @@ export class LoginComponent {
     email: '',
     password: ''
   }
+  private authService = inject(AuthService);
+
 
   onLogin() {
-    console.log('Enviando...');
+    this.authService.login(this.login)
+      .subscribe({
+        next: (res) => {
+          console.log('Login successful', res);
+        },
+        error: (err) => {
+          console.error('Login failed', err);
+        }
+      })
   }
 
+
+  getProfile() {
+    this.authService.profile();
+  }
 }

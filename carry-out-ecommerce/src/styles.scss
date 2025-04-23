@@ -50,6 +50,11 @@ $radius-box: 5px;
   }
 }
 
+.text-secondary {
+  color: $secondary-color;
+  font-weight: bolder;
+  font-size: 1,2rem;
+}
 .call-to-action {
   background-color: $primary-color;
   color: $white;
