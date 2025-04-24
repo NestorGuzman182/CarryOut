@@ -3,6 +3,7 @@ import { HttpClient, HttpErrorResponse, HttpParams, HttpStatusCode } from '@angu
 import { IProduct, ICreateProductDTO, IUpdateProductDTO } from '../../models/product.model';
 import { retry, catchError, throwError, map } from 'rxjs';
 import { environment } from '../../../../environments/environment';
+import { checkTime } from '../../interceptors/time.interceptor';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class ProductService {
         params.set('limit', limit)
         params.set('offset', offset);
     }
-    return this.http.get<IProduct[]>(this.apiUrl, { params })
+    return this.http.get<IProduct[]>(this.apiUrl, { params, context: checkTime(true) })
       .pipe(
         retry(3),
         map((products: IProduct[]) => products.map((product: IProduct) => {

@@ -4,6 +4,7 @@ import { environment } from '../../../../environments/environment';
 import { IAuth } from '../../models/auth.model';
 import { ILoginDTO, IUser } from '../../models/user.model';
 import { BehaviorSubject, tap } from 'rxjs';
+import { TokenService } from '../token/token.service';
 
 @Injectable({
   providedIn: 'root'
@@ -16,12 +17,13 @@ export class AuthService {
   private profileSubject = new BehaviorSubject<IUser>({} as IUser);
   profile$ = this.profileSubject.asObservable();
 
-  private token = '';
+  private tokenService = inject(TokenService);
+  //private token = '';
 
   login(user: ILoginDTO) {
     return this.http.post<IAuth>(`${this.apiUrl}/login`, user).pipe(
       tap((res) => {
-        this.token = res.access_token;
+        this.tokenService.saveToken(res.access_token);
         this.profile();
       })
     );
@@ -29,15 +31,15 @@ export class AuthService {
 
   profile() {
     return this.http.get(`${this.apiUrl}/profile`, {
-      headers: { Authorization: `Bearer ${this.token}` }
+      //headers: { Authorization: `Bearer ${this.tokenService.getToken()}` }
     })
     .subscribe((res) => {
       this.profileSubject.next(res as IUser);
     });
   }
 
-  getToken() {
+/*   getToken() {
     return this.token;
-  }
+  } */
 
 }
