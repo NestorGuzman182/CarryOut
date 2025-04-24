@@ -19,7 +19,11 @@
       <a class="brand-logo" href="index.html#home">
         <img src="assets/logos-icons/brandCarryOut.png" alt="logo carry" /></a>
       <li>
-        <a id="btnRegistro" class="btn secondary btn-modal openModal" routerLink="/auth">REGÍSTRO / SESIÓN</a>
+        <a id="btnRegistro" class="btn secondary btn-modal openModal"
+        *ngIf="!userEmail; else loginBlock" routerLink="/auth">REGÍSTRO / SESIÓN</a>
+        <ng-template #loginBlock>
+          <a class="text-secondary" routerLink="/profile"> {{ userEmail }} </a>
+        </ng-template>
       </li>
       <li>
         <a href=""><img src="assets/logos-icons/carrito.png" alt="carrito" width="40" /></a>
