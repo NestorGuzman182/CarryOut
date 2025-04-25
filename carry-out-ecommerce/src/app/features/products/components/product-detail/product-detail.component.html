@@ -1,0 +1,29 @@
+<div class="product-detail" [class.active]="showProductDetail" >
+  <div *ngIf="productChosen">
+    <div class="close-container">
+      <button class="btn primary" (click)="toggleProductDetail()"> X </button>
+    </div>
+    <div class="container-detail">
+      <h1>{{ productChosen.title }}</h1>
+      <div class="detail-container">
+        <div class="product-detail-description">
+          <swiper-container>
+            <swiper-slide *ngFor="let image of productChosen.images" class="swiper-slide">
+              <img [src]="image" alt="" />
+            </swiper-slide>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </swiper-container>
+          <p>{{ productChosen.description}}</p>
+          <button (click)="updateProduct()">Editar</button>
+          <button (click)="deleteProduct()">Eliminar</button>
+        </div>
+        <div class="product-detail-cart">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

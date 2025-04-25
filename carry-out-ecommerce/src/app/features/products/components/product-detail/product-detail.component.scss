@@ -1,0 +1,40 @@
+.product-detail {
+  position: fixed;
+  top: 0;
+  left: 40%;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(100%);
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.close-container {
+  text-align: end;
+
+  button {
+    border: none;
+    border-radius: 100%;
+  }
+}
+
+.swiper-slide img{
+  width: 100%;
+}
+
+.detail-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media screen and (max-width: 40em) {
+  .product-detail {
+    left: 0
+  }
+}

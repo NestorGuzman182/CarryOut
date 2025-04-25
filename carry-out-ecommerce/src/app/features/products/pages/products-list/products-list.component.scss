@@ -19,31 +19,6 @@
   }
 }
 
-.product-detail {
-  position: fixed;
-  top: 0;
-  left: 40%;
-  bottom: 0;
-  right: 0;
-  background-color: #fff;
-  flex-direction: column;
-  justify-content: flex-start;
-  transition: all 0.5s ease-in-out;
-  transform: translateX(100%);
-  &.active {
-    transform: translateX(0);
-  }
-}
-
-.swiper-slide img{
-  width: 100%;
-  max-width: 330px;
-}
-
-.detail-container {
-  display: flex;
-}
-
 // Tablets
 @media screen and (min-width: 40em) and (max-width: 64em) {
   .container {

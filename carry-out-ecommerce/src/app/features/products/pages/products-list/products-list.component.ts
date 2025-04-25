@@ -5,12 +5,13 @@ import { IProduct, ICreateProductDTO, IUpdateProductDTO } from '../../../../core
 import { StoreService } from '../../../../core/services/store/store.service';
 import { ProductService } from '../../../../core/services/product/product.service';
 import { register } from 'swiper/element/bundle';
+import { ProductDetailComponent } from '../../components/product-detail/product-detail.component';
 register()
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [ CommonModule, ProductComponent ],
+  imports: [ CommonModule, ProductComponent, ProductDetailComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   templateUrl: './products-list.component.html',
   styleUrl: './products-list.component.scss'
@@ -54,10 +55,11 @@ export default class ListComponent implements OnInit {
 
   onShowDetail(id: string) {
     this.statusDetail = 'loading';
+    console.log(this.statusDetail);
     this.productService.getProduct(id)
       .subscribe({
         next: (data: IProduct) => {
-          this.toggleproductDetail();
+          this.toggleProductDetail();
           this.productChosen = data;
           this.statusDetail = 'success';
         },
@@ -68,7 +70,7 @@ export default class ListComponent implements OnInit {
       });
   }
 
-  toggleproductDetail() {
+  toggleProductDetail() {
     this.showProductDetail = !this.showProductDetail;
   }
 
