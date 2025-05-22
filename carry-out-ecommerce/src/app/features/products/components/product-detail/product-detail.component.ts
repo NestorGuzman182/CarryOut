@@ -24,7 +24,7 @@ export class ProductDetailComponent {
   @Output() toggleClose = new EventEmitter<void>();
 
   private productService = inject(ProductService);
-  products = this.productService.getAllProducts();
+  products = this.productService.getAll();
 
   toggleProductDetail() {
     this.toggleClose.emit();

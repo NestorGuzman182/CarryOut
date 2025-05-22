@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, signal, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import ProductComponent from '../../components/product/product.component';
+import { Component, inject, signal, CUSTOM_ELEMENTS_SCHEMA, Input, WritableSignal, Output, EventEmitter } from '@angular/core';
+import ProductComponent from '../product/product.component';
 import { IProduct, ICreateProductDTO, IUpdateProductDTO } from '../../../../core/models/product.model';
 import { StoreService } from '../../../../core/services/store/store.service';
 import { ProductService } from '../../../../core/services/product/product.service';
 import { register } from 'swiper/element/bundle';
-import { ProductDetailComponent } from '../../components/product-detail/product-detail.component';
+import { ProductDetailComponent } from '../product-detail/product-detail.component';
 register()
 
 @Component({
@@ -16,13 +16,18 @@ register()
   templateUrl: './products-list.component.html',
   styleUrl: './products-list.component.scss'
 })
-export default class ListComponent implements OnInit {
+export default class ListComponent {
+
+  @Input() products!: WritableSignal<IProduct[]>;
+  @Input() categoryId: string | null = null;
+  @Output() loadMore = new EventEmitter<void>();
+
+
   private storeService = inject(StoreService);
   private productService = inject(ProductService);
 
   myShoppingCart: IProduct[] = [];
   total = signal(0);
-  products = signal<IProduct[]>([]);
   showProductDetail = false;
   productChosen: IProduct = {
     id: '',
@@ -36,17 +41,29 @@ export default class ListComponent implements OnInit {
       typeImg: ''
     }
   };
-  limit = 10;
-  offset = 0;
+/*   limit = 10;
+  offset = 0; */
   statusDetail: 'loading' | 'success' | 'error' | 'init' = 'init';
 
 
-  ngOnInit() {
-    this.productService.getAllProducts(10, 0)
-      .subscribe( (data: IProduct[]) => this.products.set(data));
+/*   ngOnInit() {
+    if (this.categoryId) {
+      this.productService.getByCategory(this.categoryId, this.limit, this.offset)
+        .subscribe((data: IProduct[]) => {
+          this.products.set(data);
+        });
+    } else {
+      this.productService.getAll(this.limit, this.offset)
+      .subscribe((data: IProduct[]) => {
+        this.products.set(data);
+        this.offset += this.limit;
+      });
+    }
+
     this.storeService.getShoppingCart();
     this.total.set(this.storeService.getTotal());
-  }
+  } */
+
 
   onAddToShoppingCart(product: IProduct) {
     this.storeService.addProduct(product);
@@ -115,17 +132,19 @@ export default class ListComponent implements OnInit {
         this.products.update( (products) => products.filter(item => item.id !== id));
         this.showProductDetail = false;
       })
-
-
   }
 
-  loadMore() {
+  onLoadMore() {
+    console.log('enviando desde hijo');
+    this.loadMore.emit();
+  }
+/*   loadMore() {
     this.productService.getProductsBypage(this.limit, this.offset)
     .subscribe( (data: IProduct[]) => {
       this.products.set(this.products().concat(data))
       this.offset += this.limit
     });
-  }
+  } */
 }
 
 

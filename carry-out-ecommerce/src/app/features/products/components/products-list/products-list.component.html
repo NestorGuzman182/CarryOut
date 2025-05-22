@@ -5,14 +5,15 @@
 
 <div class="container">
   <div class="box-area"></div>
-
+  {{ products().length}} productos
   <app-product
     [product]="product"
     *ngFor="let product of products()"
     (addToCartProduct)="onAddToShoppingCart($event)"
     (showDetailProduct)="onShowDetail($event)"
   ></app-product>
-  <button (click)="loadMore()">ver mas</button>
+  <h1>{{ products().length}}</h1>
+  <button (click)="onLoadMore()">ver mas</button>
 </div>
 
 <app-product-detail
