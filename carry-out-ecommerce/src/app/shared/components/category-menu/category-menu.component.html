@@ -1,9 +1,9 @@
 <ul>
   <li></li>
   <li>
-    <a routerLink="/products">Todas</a>
+    <a routerLinkActive="active" routerLink="/products">Todas</a>
   </li>
   <li *ngFor="let category of categories">
-    <a [routerLink]="['/category', category.id]">{{ category.name }}</a>
+    <a routerLinkActive="active" [routerLink]="['/category', category.id]">{{ category.name }}</a>
   </li>
 </ul>

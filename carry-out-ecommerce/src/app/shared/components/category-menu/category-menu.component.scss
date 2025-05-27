@@ -1,3 +1,5 @@
+@use '../../../../styles.scss' as global;
+
 ul {
   display: flex;
   width: 100%;
@@ -7,6 +9,12 @@ ul {
     a {
       text-decoration: none;
       font-weight: 700;
+      padding: .2em .8em;
+      &.active {
+        border: 2px solid global.$primary-color;
+        color: global.$primary-color;
+        border-radius: 5px;
+      }
     }
   }
 }
