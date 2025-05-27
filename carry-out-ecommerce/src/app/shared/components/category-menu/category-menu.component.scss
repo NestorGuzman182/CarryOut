@@ -1,0 +1,12 @@
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  li {
+    margin: 10px 0px;
+    a {
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+}

@@ -22,21 +22,13 @@ export class ProductService {
       .pipe(
         retry(3),
         map((products: IProduct[]) => products.map((product: IProduct) => {
+          console.log(product + 'from service');
           return {
             ...product,
             taxes: product.price * 0.19
           }
         })),
       );
-  }
-
-  getByCategory(categoryId: string, limit?: number, offset?: number) {
-    const params = new HttpParams();
-    if(limit && offset) {
-      params.set('limit', limit);
-      params.set('offset', offset);
-    }
-    return this.http.get<IProduct[]>(`${this.apiUrl}categories/${categoryId}/products/`, { params })
   }
 
   getProduct(id: string) {

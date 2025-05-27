@@ -6,9 +6,7 @@
   <i class="fas fa-bars menu-btn" id="toggle-menu"></i>
   <nav>
     <ul class="hero-nav" id="menu">
-      <li>
-        <a class="btn secondary" href="main.html#about-us">SOBRE NOSOTROS</a>
-      </li>
+      <li><a class="btn secondary" routerLink="/about">SOBRE NOSOTROS</a></li>
       <li>
         <a class="btn secondary" href="main.html#makeyoubrand">CREA TU MARCA</a>
       </li>
@@ -54,7 +52,7 @@
   <div class="side-menu" [class.active]="showMenu">
     <button (click)="toggleMenu()">Close</button>
     <ul>
-      <li><a class="btn tertiary" href="main.html#about-us">SOBRE NOSOTROS</a></li>
+      <li><a class="btn tertiary" routerLink="/about">SOBRE NOSOTROS</a></li>
       <li><a class="btn tertiary" href="main.html#makeyoubrand">CREA TU MARCA</a></li>
       <li><a class="btn tertiary" href="main.html#Sell">EXHIBE Y VENDE TU MARCA</a></li>
       <li><a class="btn tertiary" routerLink="/products">MARCAS-ARTISTAS</a></li>
