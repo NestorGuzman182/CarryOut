@@ -8,6 +8,7 @@ import {
   style,
   animate
 } from '@angular/animations';
+import { OnExit } from '../../core/guards/exit.guard';
 
 @Component({
   selector: 'app-auth',
@@ -27,8 +28,16 @@ import {
     ])
   ]
 })
-export default class AuthComponent {
+export default class AuthComponent implements OnExit {
   isRegisterMode = false;
+
+  onExit() {
+    if (this.isRegisterMode) {
+      const rta = confirm('Se va caballero?');
+      return rta;
+    }
+    return true;
+  }
 
   toggleMode() {
     this.isRegisterMode = !this.isRegisterMode;
