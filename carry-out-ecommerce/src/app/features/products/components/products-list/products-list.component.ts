@@ -4,14 +4,13 @@ import ProductComponent from '../product/product.component';
 import { IProduct, ICreateProductDTO, IUpdateProductDTO } from '../../../../core/models/product.model';
 import { StoreService } from '../../../../core/services/store/store.service';
 import { ProductService } from '../../../../core/services/product/product.service';
-import { register } from 'swiper/element/bundle';
-import { ProductDetailComponent } from '../product-detail/product-detail.component';
-register()
+import ProductDetailComponent from '../../pages/product-detail/product-detail.component';
+
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [ CommonModule, ProductComponent, ProductDetailComponent ],
+  imports: [ CommonModule, ProductComponent, ProductDetailComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   templateUrl: './products-list.component.html',
   styleUrl: './products-list.component.scss'
@@ -19,6 +18,12 @@ register()
 export default class ListComponent {
 
   @Input() products!: WritableSignal<IProduct[]>;
+  @Input()
+  set productId(id: string | null) {
+    if(id) {
+      this.onShowDetail(id);
+    }
+  }
   @Input() categoryId: string | null = null;
   @Output() loadMore = new EventEmitter<void>();
 
@@ -72,23 +77,29 @@ export default class ListComponent {
 
   onShowDetail(id: string) {
     this.statusDetail = 'loading';
-    console.log(this.statusDetail);
-    this.productService.getProduct(id)
+
+    console.log('Show product Detail', this.showProductDetail);
+    if(!this.showProductDetail) {
+      this.showProductDetail = true;
+    }
+      this.productService.getProduct(id)
       .subscribe({
         next: (data: IProduct) => {
-          this.toggleProductDetail();
+
           this.productChosen = data;
-          this.statusDetail = 'success';
-        },
-        error: errorMessage => {
-          alert(errorMessage);
-          this.statusDetail = 'error';
-        }
-      });
+          console.log('Product chosen', this.productChosen);
+            this.statusDetail = 'success';
+          },
+          error: errorMessage => {
+            alert(errorMessage);
+            this.statusDetail = 'error';
+          }
+        });
   }
 
   toggleProductDetail() {
     this.showProductDetail = !this.showProductDetail;
+    console.log(this.showProductDetail);
   }
 
   createNewProduct() {

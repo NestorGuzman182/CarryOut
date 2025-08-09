@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IProduct } from '../../../../core/models/product.model';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [ CommonModule ],
+  imports: [ CommonModule, RouterLink ],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss'
 })

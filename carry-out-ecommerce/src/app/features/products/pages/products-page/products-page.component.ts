@@ -4,7 +4,7 @@ import ListComponent from '../../components/products-list/products-list.componen
 import { IProduct } from '../../../../core/models/product.model';
 import { ProductService } from '../../../../core/services/product/product.service';
 import { CategoryMenuComponent } from '../../../../shared/components/category-menu/category-menu.component';
-
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products-page',
@@ -15,10 +15,12 @@ import { CategoryMenuComponent } from '../../../../shared/components/category-me
 })
 
 export default class ProductsPageComponent implements OnInit {
-  products = signal<IProduct[]>([]);
-  productService = inject(ProductService);
   limit = 10;
   offset = 0;
+  productId: string | null = null;
+  products = signal<IProduct[]>([]);
+  productService = inject(ProductService);
+  route = inject(ActivatedRoute);
 
   ngOnInit() {
     this.productService.getAll(this.limit, this.offset)
@@ -26,8 +28,12 @@ export default class ProductsPageComponent implements OnInit {
       this.products.set(data);
       this.offset += this.limit;
     });
+    this.route.queryParamMap
+    .subscribe( params => {
+      this.productId = params.get('product');
+      console.log(this.productId);
+    })
 
-    console.log(this.products);
   }
 
   onLoadMore() {

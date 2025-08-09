@@ -15,13 +15,16 @@
   <button (click)="onLoadMore()">ver mas</button>
 </div>
 
-<app-product-detail
-  [productChosen]="productChosen"
-  [showProductDetail]="showProductDetail"
-  (update)="updateProduct()"
-  (delete)="deleteProduct()"
-  (toggleClose)="toggleProductDetail()"
->
-</app-product-detail>
+<div class="product-detail-container" [class.active]="showProductDetail">
+  <h1>Hola</h1>
+  <app-product-detail
+    [productChosen]="productChosen"
+    [showProductDetail]="showProductDetail"
+    (update)="updateProduct()"
+    (delete)="deleteProduct()"
+    (toggleClose)="toggleProductDetail()"
+  >
+  </app-product-detail>
+</div>
 
 

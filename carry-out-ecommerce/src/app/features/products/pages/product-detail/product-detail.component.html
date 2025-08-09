@@ -1,0 +1,26 @@
+<div class="product-detail">
+  <div>
+    <h2>Esto es Product Dertail</h2>
+      <div class="detail-container">
+        <div class="product-detail-description">
+          <swiper-container #swiperContainer>
+            <swiper-slide *ngFor="let image of product?.images">
+              <img [src]="image" alt="" />
+            </swiper-slide>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </swiper-container>
+        </div>
+        <div class="product-detail-cart">
+            <h1>{{ product?.title }}</h1>
+            <h2>{{ product?.price | currency }}</h2>
+            <p>{{ product?.description}}</p>
+            <button class="btn primary" (click)="goToBack()">Volver </button>
+            <button (click)="updateProduct()">Editar</button>
+            <button (click)="deleteProduct()">Eliminar</button>
+        </div>
+      </div>
+  </div>
+</div>
+

@@ -1,2 +1,6 @@
 <app-category-menu />
-<app-list [products]="products" (loadMore)="onLoadMore()"></app-list>
+<app-list
+  [productId]="productId"
+  [products]="products"
+  (loadMore)="onLoadMore()"
+></app-list>

@@ -1,13 +1,15 @@
 
 <div class="product-container">
-  <div class="image-container">
-    <img *ngIf="product.images.length > 0" [src]="product.images[0]" alt="">
-  </div>
+  <a [routerLink]="['/product', product.id]">
+    <div class="image-container">
+      <img *ngIf="product.images.length > 0" [src]="product.images[0]" alt="">
+    </div>
+  </a>
   <p>{{ product.title }}</p>
   <h2>{{ product.price | currency: 'COP' :'symbol-narrow' :'1.0' }}</h2>
   <p>{{ product?.taxes | currency: 'COP' :'symbol-narrow' :'1.0'  }}</p>
   <div class="btn-container">
-    <button class="btn tertiary" (click)="onShowDetail()">Ver detalle</button>
-    <button class="btn primary" (click)="onAddToCart()">Agregar Carrito</button>
+   <button routerLink="." [queryParams]="{ product: product.id}"  class="btn tertiary"> Ver detalle</button>
+   <button class="btn primary" (click)="onAddToCart()">Agregar Carrito</button>
   </div>
 </div>
