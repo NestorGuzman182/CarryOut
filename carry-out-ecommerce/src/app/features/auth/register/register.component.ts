@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AuthService } from '../../../core/services/auth/auth.service';
 import { UsersService } from '../../../core/services/users/users.service';
 @Component({
   selector: 'app-register',
@@ -19,11 +18,8 @@ export class RegisterComponent {
     avatar: 'https://i.imgur.com/LDOO4Qs.jpg'
   }
 
-  private authService = inject(AuthService);
   private usersService = inject(UsersService);
-/*   validField(field: string) {
-    return this.register[field].length > 3
-  } */
+
 
   onRegister() {
     this.createUser();;
