@@ -21,6 +21,7 @@
         *ngIf="!userEmail; else loginBlock" routerLink="/auth">REGÍSTRO / SESIÓN</a>
         <ng-template #loginBlock>
           <a class="text-secondary" routerLink="/profile"> {{ userEmail }} </a>
+          <a class="btn secondary" (click)="logOut()">SALIR</a>
         </ng-template>
       </li>
       <li>
