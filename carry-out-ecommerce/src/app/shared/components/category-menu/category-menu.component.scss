@@ -10,6 +10,7 @@ ul {
       text-decoration: none;
       font-weight: 700;
       padding: .2em .8em;
+      color: global.$secondary-color;
       &.active {
         border: 2px solid global.$primary-color;
         color: global.$primary-color;

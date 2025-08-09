@@ -17,10 +17,11 @@ import { CategoryMenuComponent } from '../../../shared/components/category-menu/
 })
 export default class CategoryComponent implements OnInit {
 
-  products = signal<IProduct[]>([]);
   categoryId: string | null = null;
+  productId: string | null = null;
   limit = 10;
   offset = 0;
+  products = signal<IProduct[]>([]);
 
   private route = inject(ActivatedRoute);
   private productService = inject(ProductService);
@@ -40,6 +41,11 @@ export default class CategoryComponent implements OnInit {
       .subscribe((data) => {
         this.products.set(data);
       })
+
+      this.route.queryParamMap
+        .subscribe( params => {
+          this.productId = params.get('product');
+        })
 
 /*       .subscribe(params => {
       this.categoryId = params.get('id')
