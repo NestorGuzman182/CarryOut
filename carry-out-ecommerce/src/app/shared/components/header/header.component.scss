@@ -1,8 +1,9 @@
 @use '../../../../styles.scss' as global;
 
-.nav-main {
+$shadow: -5px 10px 10px -12px rgba(0, 0, 0, 0.75);
 
-  box-shadow: -5px 10px 10px -12px rgba(0, 0, 0, 0.75);
+.nav-main {
+  box-shadow: $shadow;
 }
 
 .followus__container {
@@ -28,6 +29,7 @@
   border: 2px solid global.$secondary-color;
   width: 300px;
   padding: 5px;
+
   input {
     border: none;
     width: 90%;
@@ -76,12 +78,10 @@
     align-items: center;
     padding: 10px 20px;
   }
+
   .side-menu{
     position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 0; left: 0; bottom: 0; right: 0;
     background-color: global.$white;
     display: flex;
     flex-direction: column;
