@@ -1,4 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff0000; /* Color visible */
+  &::after {
+    font-size: 24px; /* Tamaño adecuado */
+  }
+}
+
 $primary-color: #E64426;
 $secondary-color: #404263;
 $white: #fff;
@@ -82,3 +94,4 @@ input {
 .error {
   color: red;
 }
+
